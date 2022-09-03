@@ -8,7 +8,7 @@ const headerItems = ['Home', 'Services', 'About', 'Skills', 'Portfolio', 'Blog',
 export default () => (
   <div className='h-[80px] p-4 container mx-auto bg-[transparent] flex items-center'>
     <Link to='/' className='text-2xl text-white font-semibold'>
-      ami.ke
+      red<sup>tm</sup>
     </Link>
     <HeaderItemList items={headerItems} />
   </div>
