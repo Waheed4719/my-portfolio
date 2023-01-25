@@ -1,4 +1,3 @@
-import React from 'react';
 import HeaderItem from './HeaderItem';
 
 type Props = {

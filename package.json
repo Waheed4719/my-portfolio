@@ -22,6 +22,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
+        "dev": "eslint \"src/**/*.{js,jsx,ts,tsx}\" && react-scripts start",
         "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
         "lint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
         "lint:fixAndRun": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix && npm start",

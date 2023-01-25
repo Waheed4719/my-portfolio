@@ -12,11 +12,11 @@ type IconObj = {
 const GetIcon = ({ iconName, iconProps }: Props): JSX.Element => {
     const iconObj: IconObj = {
         "react": <SiReact {...iconProps} />,
-        "typescript": <SiTypescript  {...iconProps}/>,
-        "node": <SiNodedotjs  {...iconProps}/>,
-        "vue": <SiVuedotjs  {...iconProps}/>,
-        "next": <SiNextdotjs  {...iconProps}/>,
-        "express": <SiExpress  {...iconProps}/>
+        "typescript": <SiTypescript  {...iconProps} />,
+        "node": <SiNodedotjs  {...iconProps} />,
+        "vue": <SiVuedotjs  {...iconProps} />,
+        "next": <SiNextdotjs  {...iconProps} />,
+        "express": <SiExpress  {...iconProps} />
     }
     return iconObj[iconName ?? 'react']
 }

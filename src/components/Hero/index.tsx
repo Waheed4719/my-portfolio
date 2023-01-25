@@ -17,7 +17,7 @@ const Hero = () => (
                 </div>
                 <h1 className='text-white font-bold text-4xl mb-4'>I am Waheed Uddin Ahmed</h1>
                 <p className='text-white font-thin mb-10'>{`Hi, I'm Waheed, professional web developer with a fair amount of experience in this field.`}</p>
-                <button type="button" className='px-10 py-2 border-2 hover:bg-red border-red font-semibold text-sm bg-cyan-500 text-white rounded-full shadow-sm'>My Portfolio</button>
+                <button type="button" className='px-10 py-2 border-2 hover:bg-red bg-transparent border-red font-semibold text-sm bg-cyan-500 text-white rounded-full shadow-sm'>My Portfolio</button>
             </div>
 
             <Player

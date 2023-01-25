@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import HeaderItemList from './HeaderItemList';
 
-const headerItems = ['Home', 'Services', 'About', 'Skills', 'Portfolio', 'Blog', 'Contact'];
+const headerItems = ['Home', 'Stack', 'Projects', 'About', 'Skills', 'Blog', 'Contact'];
 
 export default () => (
   <div className='h-[80px] p-4 container mx-auto bg-[transparent] flex items-center'>
