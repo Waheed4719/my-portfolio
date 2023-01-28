@@ -1,5 +1,5 @@
-import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import { Player } from '@lottiefiles/react-lottie-player';
+import Icon from '../common/Icon'
 import CoderLottieFile from '../../json/coder-lottie.json';
 
 const Hero = () => (
@@ -8,10 +8,10 @@ const Hero = () => (
             <div className='w-[450px] p-4'>
                 <div className='flex gap-4 mb-10'>
                     <div className='items-center rounded-full p-2 border-red border-2 group hover:bg-red cursor-pointer'>
-                        <FaFacebookF size='20px' color='white' />
+                        <Icon iconName="facebook" iconProps={{ color: 'white' }} />
                     </div>
                     <div className='items-center rounded-full p-2 border-red border-2 hover:bg-red cursor-pointer'>
-                        <FaLinkedinIn size='20px' color='white' />
+                        <Icon iconName="linkedIn" iconProps={{ color: 'white' }} />
                     </div>
                 </div>
                 <h1 className='text-white font-bold text-4xl mb-4'>I am Waheed Uddin Ahmed</h1>

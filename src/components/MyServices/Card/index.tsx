@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import Icon from '../../common/GetIcon'
+import Icon from '../../common/Icon'
 
 type Props = {
   icon: string;

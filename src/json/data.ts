@@ -93,7 +93,6 @@ export const projects = [
         link: 'https://mern-chat-app-dilc.onrender.com'
     }
 ];
-
 export const services = [
     {
         icon: 'globe',

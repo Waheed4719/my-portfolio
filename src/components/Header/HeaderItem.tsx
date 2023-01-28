@@ -1,6 +1,5 @@
+type Props = { title: string, link: string }
 
-type Props = { title: string }
-
-const HeaderItem = ({ title }: Props) => (<li className="text-white  cursor-pointer hover:text-red">{title}</li>)
+const HeaderItem = ({ title, link }: Props) => (<a href={link}><li className="text-white  cursor-pointer hover:text-red">{title}</li></a>)
 
 export default HeaderItem

@@ -4,8 +4,11 @@ import MyStack from '../components/MyStack'
 import MyServices from '../components/MyServices'
 // import Contact from '../components/Contact'
 
+
 export default () => (
   <div className="bg-[#1a1b1e]">
+
+
     <Hero />
     <MyServices />
     <MyStack />

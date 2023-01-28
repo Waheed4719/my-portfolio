@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MdOutlineVisibility as VisibilityIcon, MdOutlineVisibilityOff as VisibilityOffIcon } from 'react-icons/md'
+import Icon from '../../common/Icon'
 
 type Props = {
   image: string;
@@ -23,9 +23,7 @@ export default ({ image, title, description, technologies, link }: Props) => (
     className={`bg-[#23263a] flex flex-col  hover:bg-red hover:text-white rounded-md shadow-md text-left group cursor-pointer relative overflow-hidden ${!link && 'cursor-not-allowed'}`}
   >
     <div className="hidden absolute top-[10px] right-[10px] p-2 group-hover:block group-hover:bg-red rounded-md">
-      {link ?
-        <VisibilityIcon size={20} /> : <VisibilityOffIcon size={20} />
-      }
+      <Icon iconName={`${link ? 'visibility' : 'visibilityOff'}`} />
     </div>
     <img src={image} alt={`${title}`} />
     <div className='p-4 flex-1 flex flex-col'>
