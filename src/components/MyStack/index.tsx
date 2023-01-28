@@ -2,7 +2,7 @@ import { useInView } from "react-intersection-observer";
 import { useAnimation } from 'framer-motion'
 
 import CardGrid from './CardGrid'
-import { services } from '../../json/data'
+import { stacks } from '../../json/data'
 
 const MyStack = () => {
     const [ref, inView] = useInView();
@@ -13,7 +13,7 @@ const MyStack = () => {
             <h2 className='mb-4 text-white text-2xl'>My Stack</h2>
             <p className='mb-6 text-white text-sm heading-5 max-w-[700px] text-center mx-auto'>Esse irure consequat qui irure ullamco cupidatat magna do do. Minim laborum nulla esse et nulla in minim adipisicing. Minim laborum nulla esse et nulla in minim adipisicing.</p>
             <div ref={ref} className='mb-12 bg-red h-0.5 w-10 mx-auto' />
-            <CardGrid data={services} controls={controls} inView={inView} />
+            <CardGrid data={stacks} controls={controls} inView={inView} />
         </div>
     )
 }

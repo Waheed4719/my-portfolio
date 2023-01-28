@@ -1,4 +1,6 @@
-import React from 'react';
+import { FaGlobeAsia } from 'react-icons/fa'
+import { AiOutlineBug, AiOutlineLineChart } from 'react-icons/ai'
+import { MdOutlineDesignServices } from 'react-icons/md'
 import { SiTypescript, SiNodedotjs, SiNextdotjs, SiExpress, SiReact, SiVuedotjs } from 'react-icons/si'
 
 type Props = {
@@ -16,7 +18,12 @@ const GetIcon = ({ iconName, iconProps }: Props): JSX.Element => {
         "node": <SiNodedotjs  {...iconProps} />,
         "vue": <SiVuedotjs  {...iconProps} />,
         "next": <SiNextdotjs  {...iconProps} />,
-        "express": <SiExpress  {...iconProps} />
+        "express": <SiExpress  {...iconProps} />,
+        "globe": <FaGlobeAsia {...iconProps} />,
+        "bug": <AiOutlineBug {...iconProps} />,
+        "chart": <AiOutlineLineChart {...iconProps} />,
+        "design": <MdOutlineDesignServices {...iconProps} />,
+
     }
     return iconObj[iconName ?? 'react']
 }

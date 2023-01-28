@@ -3,7 +3,7 @@ import { Player } from '@lottiefiles/react-lottie-player';
 import CoderLottieFile from '../../json/coder-lottie.json';
 
 const Hero = () => (
-    <div className='h-[650px] w-full bg-[#23263a] flex items-center justify-center'>
+    <div className='h-[650px] w-full bg-gradient-to-b from-[#1e2134] to-[#1a1b1e] flex items-center justify-center'>
         <div className='container mx-auto w-[1000px] flex flex-wrap justify-between max-w-full'>
             <div className='w-[450px] p-4'>
                 <div className='flex gap-4 mb-10'>

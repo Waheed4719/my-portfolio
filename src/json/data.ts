@@ -5,7 +5,7 @@ import MyHealthImage from '../assets/images/MyHealth.png';
 import LegaltekImage from '../assets/images/Legaltek.png';
 import XukiniImage from '../assets/images/Xukini.png';
 
-export const services = [
+export const stacks = [
     {
         icon: 'react',
         title: 'React',
@@ -91,5 +91,38 @@ export const projects = [
         description: 'A Web application for real time chat and media sharing.',
         technologies: ['React', 'SocketIo', 'ExpressJS', 'MongoDB'],
         link: 'https://mern-chat-app-dilc.onrender.com'
+    }
+];
+
+export const services = [
+    {
+        icon: 'globe',
+        title: 'Website Development',
+        description:
+            'Aute do tempor et incididunt id sunt ipsum ut fugiat nisi. Dolor tempor magna cupidatat irure voluptate ipsum.'
+    },
+    {
+        icon: 'design',
+        title: 'Website Design',
+        description:
+            'Aute do tempor et incididunt id sunt ipsum ut fugiat nisi. Dolor tempor magna cupidatat irure voluptate ipsum.'
+    },
+    {
+        icon: 'express',
+        title: 'API Creation',
+        description:
+            'Aute do tempor et incididunt id sunt ipsum ut fugiat nisi. Dolor tempor magna cupidatat irure voluptate ipsum.'
+    },
+    {
+        icon: 'chart',
+        title: 'Performance Optimization',
+        description:
+            'Aute do tempor et incididunt id sunt ipsum ut fugiat nisi. Dolor tempor magna cupidatat irure voluptate ipsum.'
+    },
+    {
+        icon: 'bug',
+        title: 'Bug Fixing',
+        description:
+            'Aute do tempor et incididunt id sunt ipsum ut fugiat nisi. Dolor tempor magna cupidatat irure voluptate ipsum.'
     }
 ];
