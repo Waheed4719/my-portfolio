@@ -1,10 +1,11 @@
-import { motion, useAnimation } from 'framer-motion'
+import { motion, AnimationControls } from 'framer-motion'
 import { useEffect } from 'react';
-import { useInView } from "react-intersection-observer";
 import Card from '../Card'
 
 type Props = {
-    data: { image: string, title: string, description: string, technologies: string[]; link: string }[]
+    data: { image: string, title: string, description: string, technologies: string[]; link: string }[],
+    controls: AnimationControls,
+    inView: boolean
 }
 const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -19,9 +20,7 @@ const container = {
 };
 
 
-export default ({ data }: Props) => {
-    const controls = useAnimation();
-    const [ref, inView] = useInView();
+export default ({ data, controls, inView }: Props) => {
     useEffect(() => {
         if (inView) {
             controls.start("visible");
@@ -29,7 +28,6 @@ export default ({ data }: Props) => {
     }, [controls, inView]);
     return (
         <motion.div
-            ref={ref}
             animate={controls}
             variants={container}
             initial="hidden"

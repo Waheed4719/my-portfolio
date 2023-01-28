@@ -1,15 +1,5 @@
 import { motion } from 'framer-motion';
-import VisibilityIcon from '../../../assets/icons/visibility.svg'
-import VisibilityOffIcon from '../../../assets/icons/visibility-off.svg'
-
-
-type ProjectType = {
-  image: string;
-  title: string;
-  description: string;
-  technologies: string[];
-  link: string;
-}
+import { MdOutlineVisibility as VisibilityIcon, MdOutlineVisibilityOff as VisibilityOffIcon } from 'react-icons/md'
 
 type Props = {
   image: string;
@@ -30,10 +20,12 @@ export default ({ image, title, description, technologies, link }: Props) => (
   <motion.div
     variants={item}
     onClick={() => link && window.open(link, '_blank', 'noreferrer')}
-    className={`bg-[#23263a] flex flex-col hover:bg-red hover:text-white rounded-md shadow-md text-left group cursor-pointer relative overflow-hidden ${!link && 'cursor-not-allowed'}`}
+    className={`bg-[#23263a] flex flex-col  hover:bg-red hover:text-white rounded-md shadow-md text-left group cursor-pointer relative overflow-hidden ${!link && 'cursor-not-allowed'}`}
   >
     <div className="hidden absolute top-[10px] right-[10px] p-2 group-hover:block group-hover:bg-red rounded-md">
-      <img src={link ? VisibilityIcon : VisibilityOffIcon} alt="visibility-icon" />
+      {link ?
+        <VisibilityIcon size={20} /> : <VisibilityOffIcon size={20} />
+      }
     </div>
     <img src={image} alt={`${title}`} />
     <div className='p-4 flex-1 flex flex-col'>

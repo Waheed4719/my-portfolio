@@ -1,11 +1,13 @@
 import Hero from '../components/Hero'
 import MyProjects from '../components/MyProjects'
-import MyServices from '../components/MyServices'
+import MyStack from '../components/MyStack'
+// import Contact from '../components/Contact'
 
 export default () => (
   <div className="bg-[#1e2134]">
     <Hero />
-    <MyServices />
+    <MyStack />
     <MyProjects />
+    {/* <Contact /> */}
   </div>
 )
