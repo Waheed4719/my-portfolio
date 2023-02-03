@@ -7,11 +7,11 @@ const MyServices = () => {
     const [ref, inView] = useInView();
     const controls = useAnimation();
     return (
-        <div id="services" className='container mx-auto text-center p-6 md:p-8 '>
+        <div id="services" ref={ref} className='container mx-auto text-center p-6 md:p-8 '>
             <h2 className='mb-4 text-red font-semibold text-md'>SERVICES</h2>
-            <h2 className='mb-4 text-white text-2xl'>My Services</h2>
-            <p className='mb-6 text-white text-sm heading-5 max-w-[700px] text-center mx-auto'>I offer comprehensive website development services, including building, design, optimization and bug fixing. Let me help you create or improve your online presence.</p>
-            <div ref={ref} className='mb-12 bg-red h-0.5 w-10 mx-auto' />
+            <h2 className='mb-4 text-white dark:text-black text-2xl'>My Services</h2>
+            <p className='mb-6 text-white dark:text-black text-sm heading-5 max-w-[700px] text-center mx-auto'>I offer comprehensive website development services, including building, design, optimization and bug fixing. Let me help you create or improve your online presence.</p>
+            <div className='mb-12 bg-red h-0.5 w-10 mx-auto' />
             <CardGrid data={services} controls={controls} inView={inView} />
         </div>
     )

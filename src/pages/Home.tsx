@@ -7,7 +7,7 @@ import AboutMe from '../components/AboutMe'
 
 
 export default () => (
-  <div className="bg-[#1a1b1e]">
+  <div className="bg-[#1a1b1e] dark:bg-white">
     <Hero />
     <AboutMe />
     <MyServices />

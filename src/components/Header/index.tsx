@@ -9,7 +9,7 @@ const headerItems = [
   { name: 'Projects', link: '#projects' },
   // { name: 'Skills', link: '#home' },
   // { name: 'Blog', link: '#home' },
-  { name: 'Contact', link: '#home' }
+  { name: 'Contact', link: '#contact' }
 ];
 
 export default () => (
