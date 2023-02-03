@@ -10,7 +10,7 @@ type Props = {
 const HeaderItemList = ({ items }: Props) => {
     const { isDarkMode, toggleDarkMode } = useContext(DisplayModeContext);
     return (
-        <ul className='ml-auto flex gap-10 space-between items-center'>
+        <ul className='ml-auto hidden md:flex gap-10 space-between items-center'>
             {' '}
             <div
                 role='presentation'
