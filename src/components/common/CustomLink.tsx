@@ -7,7 +7,7 @@ type LinkButtonProps = {
     className?: string;
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
-const LinkButton = ({ variant = 'primary', className, ...rest }: LinkButtonProps) => {
+const LinkButton = ({ variant = 'primary', className, children, ...rest }: LinkButtonProps) => {
     if (variant === 'primary') {
         return (
             <a
@@ -16,14 +16,14 @@ const LinkButton = ({ variant = 'primary', className, ...rest }: LinkButtonProps
                     className && className
                 }`}
             >
-                My Resume
+                {children}
             </a>
         );
     }
 
     return (
         <a {...rest} className={className}>
-            My Resume
+            {children}
         </a>
     );
 };

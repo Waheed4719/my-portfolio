@@ -59,7 +59,7 @@ export const projects = [
         description:
             'A Web application for monitoring and reporting pavement defects using interactive maps and search/filter functionality, with machine learning-powered crack detection.',
         technologies: ['AWS', 'React TS', 'Python', 'Maps'],
-        link: 'http://cityscan-roadeye-app-dev.s3-website-us-west-2.amazonaws.com/pavement-map'
+        link: 'http://cityscan-roadeye-app-dev.s3-website-us-west-2.amazonaws.com/performance-monitoring/road/pavement'
     },
     {
         image: MyHealthImage,

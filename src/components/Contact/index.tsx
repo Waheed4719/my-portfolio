@@ -18,16 +18,10 @@ const Contact = () => (
             </div>
 
             <div className='flex gap-4 mb-10 place-items-center justify-center '>
-                <div className='ease-in-out duration-300 items-center rounded-full p-2 border-red border-2 group hover:bg-red cursor-pointer'>
-                    <Icon
-                        iconName='facebook'
-                        iconProps={{
-                            className:
-                                'ease-in-out duration-300 text-white dark:text-black dark:group-hover:text-white'
-                        }}
-                    />
-                </div>
-                <div className='items-center ease-in-out duration-300 rounded-full p-2 border-red border-2 group hover:bg-red cursor-pointer'>
+                <a
+                    href='https://www.linkedin.com/in/waheed-uddin-ahmed-09143a1b2/'
+                    className='items-center ease-in-out duration-300 rounded-full p-2 border-red border-2 group hover:bg-red cursor-pointer'
+                >
                     <Icon
                         iconName='linkedIn'
                         iconProps={{
@@ -35,7 +29,7 @@ const Contact = () => (
                                 'ease-in-out duration-300 text-white dark:text-black dark:group-hover:text-white'
                         }}
                     />
-                </div>
+                </a>
             </div>
         </div>
     </div>
