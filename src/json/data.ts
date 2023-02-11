@@ -88,7 +88,7 @@ export const projects = [
     {
         image: MernChatImage,
         title: 'Mern Chat App',
-        description: 'A Web application for real time chat and media sharing.',
+        description: 'A Web application for real time chat and media sharing using Neophormic design.',
         technologies: ['React', 'SocketIo', 'ExpressJS', 'MongoDB'],
         link: 'https://mern-chat-app-dilc.onrender.com'
     }
