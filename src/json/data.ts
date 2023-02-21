@@ -4,6 +4,7 @@ import MernChatImage from '../assets/images/MernChat.png';
 import MyHealthImage from '../assets/images/MyHealth.png';
 import LegaltekImage from '../assets/images/Legaltek.png';
 import XukiniImage from '../assets/images/Xukini.png';
+import MetaverseImage from '../assets/images/Metaverse.png';
 
 export const stacks = [
     {
@@ -88,9 +89,18 @@ export const projects = [
     {
         image: MernChatImage,
         title: 'Mern Chat App',
-        description: 'A Web application for real time chat and media sharing using Neophormic design.',
+        description:
+            'A Web application for real time chat and media sharing using Neophormic design.',
         technologies: ['React', 'SocketIo', 'ExpressJS', 'MongoDB'],
         link: 'https://mern-chat-app-dilc.onrender.com'
+    },
+    {
+        image: MetaverseImage,
+        title: 'Metaverse Page',
+        description:
+            'A Single page design for metaverse with smooth animations, responsiveness and day/night toggle.',
+        technologies: ['React', 'Next JS', 'Framer Motion'],
+        link: 'https://metaverse-six-sigma.vercel.app/'
     }
 ];
 export const services = [
