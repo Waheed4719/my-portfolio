@@ -5,6 +5,7 @@ import MyHealthImage from '../assets/images/MyHealth.png';
 import LegaltekImage from '../assets/images/Legaltek.png';
 import XukiniImage from '../assets/images/Xukini.png';
 import MetaverseImage from '../assets/images/Metaverse.png';
+import UphomeImage from '../assets/images/Uphome.png';
 
 export const stacks = [
     {
@@ -60,7 +61,7 @@ export const projects = [
         description:
             'A Web application for monitoring and reporting pavement defects using interactive maps and search/filter functionality, with machine learning-powered crack detection.',
         technologies: ['AWS', 'React TS', 'Python', 'Maps'],
-        link: 'http://cityscan-roadeye-app-dev.s3-website-us-west-2.amazonaws.com/performance-monitoring/road/pavement'
+        link: 'http://cityscan-roadeye-app-stage.s3-website-us-west-2.amazonaws.com/performance-monitoring/road/pavement/performance-map'
     },
     {
         image: MyHealthImage,
@@ -93,6 +94,14 @@ export const projects = [
             'A Web application for real time chat and media sharing using Neophormic design.',
         technologies: ['React', 'SocketIo', 'ExpressJS', 'MongoDB'],
         link: 'https://mern-chat-app-dilc.onrender.com'
+    },
+    {
+        image: UphomeImage,
+        title: 'Uphome',
+        description:
+            'A web application is a professional platform for searching rental properties in different locations. Users can apply filters like price, number of bedrooms, and furniture to refine their search results.',
+        technologies: ['React', 'TailwindCSS'],
+        link: 'https://uphome.vercel.app/'
     },
     {
         image: MetaverseImage,
