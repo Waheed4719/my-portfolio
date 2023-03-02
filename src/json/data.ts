@@ -1,4 +1,4 @@
-import PavementAIImage from '../assets/images/PavementAI.png';
+import AssetIntelImage from '../assets/images/PavementAI.png';
 import MedfixImage from '../assets/images/Medfix.png';
 import MernChatImage from '../assets/images/MernChat.png';
 import MyHealthImage from '../assets/images/MyHealth.png';
@@ -56,7 +56,7 @@ export const projects = [
         link: 'https://test.medfixhealth.com'
     },
     {
-        image: PavementAIImage,
+        image: AssetIntelImage,
         title: 'Asset Intel',
         description:
             'A Web application for monitoring and reporting pavement defects using interactive maps and search/filter functionality, with machine learning-powered crack detection.',
