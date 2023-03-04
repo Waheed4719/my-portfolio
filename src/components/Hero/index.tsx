@@ -4,7 +4,7 @@ import CustomLink from '../common/CustomLink';
 import CoderLottieFile from '../../json/coder-lottie.json';
 
 const Hero = () => (
-    <div className='p-6 min-h-[fit-content] md:h-[650px] sm:pt-[40px] md:pt-[0px] w-full dark:bg-none bg-gradient-to-b from-[#1e2134] to-[#1a1b1e] dark:bg-[whitesmoke] flex items-center justify-center'>
+    <div className='p-6 min-h-[fit-content] lg:h-[650px] sm:pt-[40px] md:pt-[0px] w-full dark:bg-none bg-gradient-to-b from-[#1e2134] to-[#1a1b1e] dark:bg-[whitesmoke] flex items-center justify-center'>
         <div className='mx-auto w-[1000px] flex flex-wrap justify-center md:justify-between max-w-full'>
             <div className='w-[450px] md:p-4'>
                 <div className='flex gap-4 mb-10'>
