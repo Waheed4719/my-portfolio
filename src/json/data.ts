@@ -7,6 +7,27 @@ import XukiniImage from '../assets/images/Xukini.png';
 import MetaverseImage from '../assets/images/Metaverse.png';
 import UphomeImage from '../assets/images/Uphome.png';
 
+import {
+    css,
+    reactjs,
+    typescript,
+    javascript,
+    tailwind,
+    redux,
+    mongodb,
+    html,
+    git,
+    docker,
+    figma,
+    nodejs,
+    threejs,
+    AssetIntelLogo,
+    CityScanLogo,
+    InevexSolutionsLogo,
+    MedfixLogo,
+    IHealthscreenLogo
+} from '../assets';
+
 export const stacks = [
     {
         icon: 'react',
@@ -142,5 +163,111 @@ export const services = [
         title: 'Bug Fixing',
         description:
             'Aute do tempor et incididunt id sunt ipsum ut fugiat nisi. Dolor tempor magna cupidatat irure voluptate ipsum.'
+    }
+];
+
+export const technologies = [
+    {
+        name: 'HTML 5',
+        icon: html
+    },
+    {
+        name: 'CSS 3',
+        icon: css
+    },
+    {
+        name: 'JavaScript',
+        icon: javascript
+    },
+    {
+        name: 'TypeScript',
+        icon: typescript
+    },
+    {
+        name: 'React JS',
+        icon: reactjs
+    },
+    {
+        name: 'Redux Toolkit',
+        icon: redux
+    },
+    {
+        name: 'Tailwind CSS',
+        icon: tailwind
+    },
+    {
+        name: 'Node JS',
+        icon: nodejs
+    },
+    {
+        name: 'MongoDB',
+        icon: mongodb
+    },
+    {
+        name: 'Three JS',
+        icon: threejs
+    },
+    {
+        name: 'git',
+        icon: git
+    },
+    {
+        name: 'figma',
+        icon: figma
+    },
+    {
+        name: 'docker',
+        icon: docker
+    }
+];
+
+export const experiences = [
+    {
+        title: 'React.js Developer',
+        company_name: 'Medfix Healthcare',
+        icon: MedfixLogo,
+        iconBg: '#fff',
+        date: 'March 2020 - June 2021',
+        points: [
+            'Developing and maintaining a web application using React.js and other related technologies.',
+            'Implementing responsive design and ensuring cross-browser compatibility.',
+            'Participating in code reviews and providing constructive feedback to other developers.'
+        ]
+    },
+    {
+        title: 'Full Stack Developer',
+        company_name: 'IHealthScreen',
+        icon: IHealthscreenLogo,
+        iconBg: '#fff',
+        date: 'March 2020 - September 2020',
+        points: [
+            'Developing and maintaining mobile applications using React Native, Express JS, Socket.IO and other related technologies.',
+            'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+            'Participating in code reviews and providing constructive feedback to other developers.'
+        ]
+    },
+    {
+        title: 'Full Stack Developer',
+        company_name: 'Inevex Solutions',
+        icon: InevexSolutionsLogo,
+        iconBg: '#ffffff',
+        date: 'October 2020 - June 2022',
+        points: [
+            'Designing and Developing web applications using React.js, Next.js, Express and other related technologies.',
+            'Implementing responsive design and ensuring cross-browser compatibility.',
+            'Participating in code reviews and providing constructive feedback to other developers.'
+        ]
+    },
+    {
+        title: 'Front end Developer',
+        company_name: 'CityScan Technologies',
+        icon: CityScanLogo,
+        iconBg: '#E6DEDD',
+        date: 'June 2022 - Present',
+        points: [
+            'Designing and Developing an in-house web application using React.js, Material UI and other related technologies.',
+            'Collaborating with backend developers to integrate APIs and improve user experience.',
+            'Participating in code reviews and providing constructive feedback to other developers.'
+        ]
     }
 ];
