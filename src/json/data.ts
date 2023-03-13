@@ -6,6 +6,7 @@ import LegaltekImage from '../assets/images/Legaltek.png';
 import XukiniImage from '../assets/images/Xukini.png';
 import MetaverseImage from '../assets/images/Metaverse.png';
 import UphomeImage from '../assets/images/Uphome.png';
+import BoxmindImage from '../assets/images/Boxmind.png';
 
 import {
     css,
@@ -21,7 +22,6 @@ import {
     figma,
     nodejs,
     threejs,
-    AssetIntelLogo,
     CityScanLogo,
     InevexSolutionsLogo,
     MedfixLogo,
@@ -131,6 +131,13 @@ export const projects = [
             'A Single page design for metaverse with smooth animations, responsiveness and day/night toggle.',
         technologies: ['React', 'Next JS', 'Framer Motion'],
         link: 'https://metaverse-six-sigma.vercel.app/'
+    },
+    {
+        image: BoxmindImage,
+        title: 'Boxmind',
+        description: 'A Single page design with grid layout, responsiveness and day/night toggle.',
+        technologies: ['React', 'Next JS', 'TailwindCSS'],
+        link: 'https://boxmind.vercel.app/'
     }
 ];
 export const services = [
