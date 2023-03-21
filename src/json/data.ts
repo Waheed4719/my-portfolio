@@ -7,6 +7,7 @@ import XukiniImage from '../assets/images/Xukini.png';
 import MetaverseImage from '../assets/images/Metaverse.png';
 import UphomeImage from '../assets/images/Uphome.png';
 import BoxmindImage from '../assets/images/Boxmind.png';
+import WishbuxImage from '../assets/images/Wishbux.png';
 
 import {
     css,
@@ -138,6 +139,13 @@ export const projects = [
         description: 'A Single page design with grid layout, responsiveness and day/night toggle.',
         technologies: ['React', 'Next JS', 'TailwindCSS'],
         link: 'https://boxmind.vercel.app/'
+    },
+    {
+        image: WishbuxImage,
+        title: 'Wishbux',
+        description: 'A Landing page design with beautiful animations and responsiveness.',
+        technologies: ['React', 'TailwindCSS', 'Framer Motion'],
+        link: 'https://wishbux.vercel.app/'
     }
 ];
 export const services = [
