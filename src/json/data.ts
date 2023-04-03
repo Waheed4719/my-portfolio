@@ -8,6 +8,7 @@ import MetaverseImage from '../assets/images/Metaverse.png';
 import UphomeImage from '../assets/images/Uphome.png';
 import BoxmindImage from '../assets/images/Boxmind.png';
 import WishbuxImage from '../assets/images/Wishbux.png';
+import MelaniesPortfolioImage from '../assets/images/MelaniePortfolio.png';
 
 import {
     css,
@@ -146,6 +147,13 @@ export const projects = [
         description: 'A Landing page design with beautiful animations and responsiveness.',
         technologies: ['React', 'TailwindCSS', 'Framer Motion'],
         link: 'https://wishbux.vercel.app/'
+    },
+    {
+        image: MelaniesPortfolioImage,
+        title: `Melanie's Portfolio`,
+        description: 'A simple portfolio design with smooth animations and responsiveness.',
+        technologies: ['React', 'TailwindCSS', 'Framer Motion'],
+        link: 'https://melanie-portfolio-nu.vercel.app/'
     }
 ];
 export const services = [
@@ -285,4 +293,18 @@ export const experiences = [
             'Participating in code reviews and providing constructive feedback to other developers.'
         ]
     }
+];
+
+export type HeaderItemType = {
+    name: string;
+    link: string;
+};
+export const headerItems: HeaderItemType[] = [
+    // { name: 'Home', link: '#home' },
+    { name: 'About', link: '#about' },
+    { name: 'Experience', link: '#experience' },
+    { name: 'Services', link: '#services' },
+    { name: 'Stack', link: '#stack' },
+    { name: 'Projects', link: '#projects' },
+    { name: 'Contact', link: '#contact' }
 ];

@@ -2,7 +2,7 @@ import MyImage from '../../assets/images/me.jpg';
 import CustomLink from '../common/CustomLink';
 
 const AboutMe = () => (
-    <div id='aboutme' className='mx-auto text-center p-6 md:p-8 '>
+    <div id='about' className='mx-auto text-center p-6 md:p-8 '>
         <h2 className='mb-4 text-red font-semibold text-md'>ABOUT</h2>
         <h2 className='mb-4 text-white dark:text-black text-2xl'>About Me</h2>
         <div className='w-[1100px] max-w-full m-auto grid grid-cols-1 gap-3'>

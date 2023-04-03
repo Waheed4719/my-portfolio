@@ -5,6 +5,7 @@ import MyServices from '../components/MyServices';
 import Contact from '../components/Contact';
 import AboutMe from '../components/AboutMe';
 import MyExperience from '../components/MyExperience';
+import Drawer from '../components/Drawer';
 
 export default () => (
     <div className='bg-[#1a1b1e] dark:bg-white'>
@@ -15,5 +16,6 @@ export default () => (
         <MyStack />
         <MyProjects />
         <Contact />
+        <Drawer />
     </div>
 );

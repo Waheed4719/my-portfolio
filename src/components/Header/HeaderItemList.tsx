@@ -10,7 +10,7 @@ type Props = {
 const HeaderItemList = ({ items }: Props) => {
     const { isDarkMode, toggleDarkMode } = useContext(DisplayModeContext);
     return (
-        <ul className='ml-autogap-10 gap-[20px] space-between items-center flex'>
+        <ul className='ml-autogap-10 gap-[20px] space-between items-center hidden lg:flex'>
             {' '}
             <div
                 role='presentation'
@@ -25,7 +25,7 @@ const HeaderItemList = ({ items }: Props) => {
                     }}
                 />
             </div>
-            <div className=' hidden lg:flex gap-[20px]'>
+            <div className=' flex gap-[20px]'>
                 {items.map((item) => (
                     <HeaderItem title={item.name} link={item.link} key={item.name} />
                 ))}
