@@ -7,6 +7,7 @@ type Props = {
     description: string;
     technologies: string[];
     link: string;
+    github?: string;
 };
 const item = {
     hidden: { y: 20, opacity: 0 },
@@ -16,7 +17,7 @@ const item = {
     }
 };
 
-export default ({ image, title, description, technologies, link }: Props) => (
+export default ({ image, title, description, technologies, link, github }: Props) => (
     <motion.div
         variants={item}
         onClick={() => link && window.open(link, '_blank', 'noreferrer')}
@@ -27,6 +28,15 @@ export default ({ image, title, description, technologies, link }: Props) => (
         <div className='hidden absolute top-[10px] right-[10px] p-2 group-hover:block group-hover:bg-red rounded-md'>
             <Icon iconName={`${link ? 'visibility' : 'visibilityOff'}`} />
         </div>
+        {github && (
+            <a
+                className='hidden absolute top-[10px] right-[50px] p-2 items-center justify-center group-hover:flex group-hover:bg-red rounded-md'
+                onClick={(e) => e.stopPropagation()}
+                href={github}
+            >
+                <Icon iconName='github' />{' '}
+            </a>
+        )}
         <img src={image} alt={`${title}`} />
         <div className='p-4 flex-1 flex flex-col'>
             <h4 className='mb-4 text-white font-semibold'>{title}</h4>

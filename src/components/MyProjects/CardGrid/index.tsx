@@ -9,6 +9,7 @@ type Props = {
         description: string;
         technologies: string[];
         link: string;
+        github: string;
     }[];
     controls: AnimationControls;
     inView: boolean;
@@ -46,6 +47,7 @@ export default ({ data, controls, inView }: Props) => {
                     title={item.title}
                     description={item.description}
                     technologies={item.technologies}
+                    github={item.github}
                 />
             ))}
         </motion.div>

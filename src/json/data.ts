@@ -73,6 +73,7 @@ export const projects = [
     {
         image: MedfixImage,
         title: 'Medfix Healthcare',
+        github: '',
         description:
             'A SaaS web application for virtual doctor consultations with video, audio, calendar, blogs, Google Maps and Stripe Connect integration.',
         technologies: ['React', 'Socket.io', 'MongoDB', 'ExpressJS'],
@@ -81,6 +82,7 @@ export const projects = [
     {
         image: AssetIntelImage,
         title: 'Asset Intel',
+        github: '',
         description:
             'A Web application for monitoring and reporting pavement defects using interactive maps and search/filter functionality, with machine learning-powered crack detection.',
         technologies: ['AWS', 'React TS', 'Python', 'Maps'],
@@ -89,6 +91,7 @@ export const projects = [
     {
         image: MyHealthImage,
         title: 'My Health',
+        github: '',
         description:
             'A mobile application for virtual doctor consultations with video, audio, calendar, Google Maps integration, and patient report generation',
         technologies: ['React Native', 'SocketIo', 'ExpressJS', 'MongoDB'],
@@ -97,6 +100,7 @@ export const projects = [
     {
         image: LegaltekImage,
         title: 'Legaltek',
+        github: '',
         description:
             'A SaaS web application for virtual lawyer consultations, lawfirm management, and client communication, with video, audio, calendar and Google Maps integration, catering to the needs of 3 types of users: clients, lawyers, and lawfirm',
         technologies: ['React', 'Socket.io', 'MongoDB', 'ExpressJS'],
@@ -105,6 +109,7 @@ export const projects = [
     {
         image: XukiniImage,
         title: 'Xukini',
+        github: '',
         description:
             'A SaaS web application for creating and managing food businesses, learning and teaching food-related lessons, and hiring professional chefs, with features such as online ordering, calendar integration, payment processing, etc',
         technologies: ['React', 'Socket.io', 'MongoDB', 'ExpressJS'],
@@ -113,6 +118,7 @@ export const projects = [
     {
         image: MernChatImage,
         title: 'Mern Chat App',
+        github: 'https://github.com/Waheed4719/Mern-Chat-App',
         description:
             'A Web application for real time chat and media sharing using Neophormic design.',
         technologies: ['React', 'SocketIo', 'ExpressJS', 'MongoDB'],
@@ -121,6 +127,7 @@ export const projects = [
     {
         image: UphomeImage,
         title: 'Uphome',
+        github: 'https://github.com/Waheed4719/UpHome',
         description:
             'A web application is a professional platform for searching rental properties in different locations. Users can apply filters like price, number of bedrooms, and furniture to refine their search results.',
         technologies: ['React', 'TailwindCSS'],
@@ -129,6 +136,7 @@ export const projects = [
     {
         image: MetaverseImage,
         title: 'Metaverse Page',
+        github: 'https://github.com/Waheed4719/Metaverse',
         description:
             'A Single page design for metaverse with smooth animations, responsiveness and day/night toggle.',
         technologies: ['React', 'Next JS', 'Framer Motion'],
@@ -137,6 +145,7 @@ export const projects = [
     {
         image: BoxmindImage,
         title: 'Boxmind',
+        github: 'https://github.com/Waheed4719/Boxmind',
         description: 'A Single page design with grid layout, responsiveness and day/night toggle.',
         technologies: ['React', 'Next JS', 'TailwindCSS'],
         link: 'https://boxmind.vercel.app/'
@@ -144,6 +153,7 @@ export const projects = [
     {
         image: WishbuxImage,
         title: 'Wishbux',
+        github: 'https://github.com/Waheed4719/Wishbux',
         description: 'A Landing page design with beautiful animations and responsiveness.',
         technologies: ['React', 'TailwindCSS', 'Framer Motion'],
         link: 'https://wishbux.vercel.app/'
@@ -151,6 +161,7 @@ export const projects = [
     {
         image: MelaniesPortfolioImage,
         title: `Melanie's Portfolio`,
+        github: '',
         description: 'A simple portfolio design with smooth animations and responsiveness.',
         technologies: ['React', 'TailwindCSS', 'Framer Motion'],
         link: 'https://melanie-portfolio-nu.vercel.app/'

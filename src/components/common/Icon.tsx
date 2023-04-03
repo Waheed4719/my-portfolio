@@ -1,12 +1,8 @@
 import { FaGlobeAsia, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
-import { AiOutlineBug, AiOutlineLineChart } from 'react-icons/ai';
+import { AiOutlineBug, AiOutlineLineChart, AiOutlineGithub, AiOutlineLink } from 'react-icons/ai';
 import { BsMoon, BsSun } from 'react-icons/bs';
 import {
-    MdOutlineDesignServices,
-    MdOutlineVisibility,
-    MdOutlineVisibilityOff
-} from 'react-icons/md';
-import {
+    SiUpwork,
     SiTypescript,
     SiNodedotjs,
     SiNextdotjs,
@@ -14,6 +10,12 @@ import {
     SiReact,
     SiVuedotjs
 } from 'react-icons/si';
+
+import {
+    MdOutlineDesignServices,
+    MdOutlineVisibility,
+    MdOutlineVisibilityOff
+} from 'react-icons/md';
 
 type Props = {
     iconName: string;
@@ -40,7 +42,10 @@ const GetIcon = ({ iconName, iconProps }: Props): JSX.Element => {
         facebook: <FaFacebookF {...iconProps} />,
         linkedIn: <FaLinkedinIn {...iconProps} />,
         moon: <BsMoon {...iconProps} />,
-        sun: <BsSun {...iconProps} />
+        sun: <BsSun {...iconProps} />,
+        github: <AiOutlineGithub {...iconProps} />,
+        link: <AiOutlineLink {...iconProps} />,
+        upwork: <SiUpwork {...iconProps} />
     };
     return iconObj[iconName ?? 'react'];
 };

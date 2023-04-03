@@ -8,7 +8,10 @@ const Hero = () => (
         <div className='mx-auto w-[1000px] flex flex-wrap justify-center md:justify-between max-w-full'>
             <div className='w-[450px] md:p-4'>
                 <div className='flex gap-4 mb-10'>
-                    <div className='ease-in-out duration-300 items-center rounded-full p-2 border-red border-2 group hover:bg-red cursor-pointer'>
+                    <a
+                        href='https://www.facebook.com/wahid.ahmed.96/'
+                        className='ease-in-out duration-300 items-center rounded-full p-2 border-red border-2 group hover:bg-red cursor-pointer'
+                    >
                         <Icon
                             iconName='facebook'
                             iconProps={{
@@ -16,8 +19,11 @@ const Hero = () => (
                                     'ease-in-out duration-300 text-white dark:text-black dark:group-hover:text-white'
                             }}
                         />
-                    </div>
-                    <div className='items-center ease-in-out duration-300 rounded-full p-2 border-red border-2 group hover:bg-red cursor-pointer'>
+                    </a>
+                    <a
+                        href='https://www.linkedin.com/in/waheed-uddin-ahmed-09143a1b2/'
+                        className='items-center ease-in-out duration-300 rounded-full p-2 border-red border-2 group hover:bg-red cursor-pointer'
+                    >
                         <Icon
                             iconName='linkedIn'
                             iconProps={{
@@ -25,7 +31,32 @@ const Hero = () => (
                                     'ease-in-out duration-300 text-white dark:text-black dark:group-hover:text-white'
                             }}
                         />
-                    </div>
+                    </a>
+
+                    <a
+                        href='https://github.com/Waheed4719'
+                        className='items-center ease-in-out duration-300 rounded-full p-2 border-red border-2 group hover:bg-red cursor-pointer'
+                    >
+                        <Icon
+                            iconName='github'
+                            iconProps={{
+                                className:
+                                    'ease-in-out duration-300 text-white dark:text-black dark:group-hover:text-white'
+                            }}
+                        />
+                    </a>
+                    <a
+                        href='https://www.upwork.com/freelancers/~015a4a1d12148116c9'
+                        className='items-center ease-in-out duration-300 rounded-full p-2 border-red border-2 group hover:bg-red cursor-pointer'
+                    >
+                        <Icon
+                            iconName='upwork'
+                            iconProps={{
+                                className:
+                                    'ease-in-out duration-300 text-white dark:text-black dark:group-hover:text-white'
+                            }}
+                        />
+                    </a>
                 </div>
                 <h1 className='text-white dark:text-black font-bold text-4xl mb-4'>
                     I am Waheed Uddin Ahmed

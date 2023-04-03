@@ -30,6 +30,42 @@ const Contact = () => (
                         }}
                     />
                 </a>
+                <a
+                    href='https://github.com/Waheed4719'
+                    className='items-center ease-in-out duration-300 rounded-full p-2 border-red border-2 group hover:bg-red cursor-pointer'
+                >
+                    <Icon
+                        iconName='github'
+                        iconProps={{
+                            className:
+                                'ease-in-out duration-300 text-white dark:text-black dark:group-hover:text-white'
+                        }}
+                    />
+                </a>
+                <a
+                    href='https://www.upwork.com/freelancers/~015a4a1d12148116c9'
+                    className='items-center ease-in-out duration-300 rounded-full p-2 border-red border-2 group hover:bg-red cursor-pointer'
+                >
+                    <Icon
+                        iconName='upwork'
+                        iconProps={{
+                            className:
+                                'ease-in-out duration-300 text-white dark:text-black dark:group-hover:text-white'
+                        }}
+                    />
+                </a>
+                <a
+                    href='https://www.facebook.com/wahid.ahmed.96/'
+                    className='items-center ease-in-out duration-300 rounded-full p-2 border-red border-2 group hover:bg-red cursor-pointer'
+                >
+                    <Icon
+                        iconName='facebook'
+                        iconProps={{
+                            className:
+                                'ease-in-out duration-300 text-white dark:text-black dark:group-hover:text-white'
+                        }}
+                    />
+                </a>
             </div>
         </div>
     </div>
