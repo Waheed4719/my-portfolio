@@ -75,7 +75,12 @@ const Hero = () => (
                     My Resume
                 </CustomLink>
             </div>
-            <Player src={CoderLottieFile} className='w-[400px]' loop autoplay />
+            <Player
+                src={CoderLottieFile}
+                className='w-[350px] md:w-[400px] max-w-full'
+                loop
+                autoplay
+            />
         </div>
     </div>
 );

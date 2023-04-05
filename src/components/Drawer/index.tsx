@@ -80,7 +80,7 @@ const Drawer = () => {
                         <div className='px-[5.4rem] pt-[1.7rem] flex justify-end'>
                             <button
                                 type='button'
-                                className='mb-[2.4rem] text-[4rem] text-right'
+                                className='mb-[2.4rem] text-[4rem] text-right text-white'
                                 onClick={() => setOpen((prev) => !prev)}
                             >
                                 &times;
