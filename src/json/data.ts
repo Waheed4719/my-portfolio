@@ -92,7 +92,7 @@ export const projects = [
     },
     {
         image: MyHealthImage,
-        title: 'My Health',
+        title: 'My Health App',
         github: '',
         description:
             'A mobile application for virtual doctor consultations with video, audio, calendar, Google Maps integration, and patient report generation',
