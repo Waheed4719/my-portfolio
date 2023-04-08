@@ -25,6 +25,14 @@ export default ({ image, title, description, technologies, link, github }: Props
             !link && 'cursor-not-allowed'
         }`}
     >
+        <div className='h-[172px] object-contain relative flex items-center justify-center overflow-hidden'>
+            <img
+                src={image}
+                className='h-[172px] w-full absolute object-center top-0 left-0 bottom-0 right-0 object-cover blur-md'
+                alt={`${title}-blur`}
+            />
+            <img src={image} className='h-[172px] object-contain relative z-1' alt={`${title}`} />
+        </div>
         <div className='hidden absolute top-[10px] right-[10px] p-2 group-hover:block group-hover:bg-red rounded-md'>
             <Icon iconName={`${link ? 'visibility' : 'visibilityOff'}`} />
         </div>
@@ -37,7 +45,6 @@ export default ({ image, title, description, technologies, link, github }: Props
                 <Icon iconName='github' />{' '}
             </a>
         )}
-        <img src={image} alt={`${title}`} />
         <div className='p-4 flex-1 flex flex-col'>
             <h4 className='mb-4 text-white font-semibold'>{title}</h4>
             <p className='mb-4 text-white text-sm flex-1'>{description}</p>

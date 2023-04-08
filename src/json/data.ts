@@ -9,6 +9,8 @@ import UphomeImage from '../assets/images/Uphome.png';
 import BoxmindImage from '../assets/images/Boxmind.png';
 import WishbuxImage from '../assets/images/Wishbux.png';
 import MelaniesPortfolioImage from '../assets/images/MelaniePortfolio.png';
+import FoodDeliveryAppImage from '../assets/images/Food Delivery.png';
+import NewsAppImage from '../assets/images/News App.png';
 
 import {
     css,
@@ -96,6 +98,24 @@ export const projects = [
             'A mobile application for virtual doctor consultations with video, audio, calendar, Google Maps integration, and patient report generation',
         technologies: ['React Native', 'SocketIo', 'ExpressJS', 'MongoDB'],
         link: 'https://play.google.com/store/apps/details?id=com.ihs.myhealth'
+    },
+    {
+        image: FoodDeliveryAppImage,
+        title: 'Food Delivery App',
+        github: 'https://github.com/Waheed4719/Food-delivery-App',
+        description:
+            'A mobile application for ordering food from restaurants, with features such as online ordering, payment processing, and delivery tracking. (In Progress)',
+        technologies: ['React Native', 'SocketIo', 'ExpressJS', 'MongoDB'],
+        link: ''
+    },
+    {
+        image: NewsAppImage,
+        title: 'News App',
+        github: 'https://github.com/Waheed4719/News-App',
+        description:
+            'A mobile application for reading news from different sources, with features such as search, bookmarking, and sharing. (In Progress)',
+        technologies: ['Android', 'Java', 'NewsAPI', 'Retrofit'],
+        link: ''
     },
     {
         image: LegaltekImage,
