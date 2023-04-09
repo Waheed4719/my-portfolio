@@ -61,7 +61,7 @@ const Hero = () => (
                 <h1 className='text-black dark:text-white font-bold text-4xl mb-4'>
                     I am Waheed Uddin Ahmed
                 </h1>
-                <p className='text-black dark:text-white font-light mb-10'>{`A seasoned web developer with a passion for programming and gaming. With three years of experience, I specialize in designing and developing user-friendly websites. Let's connect and explore my work and growth in the field`}</p>
+                <p className='text-black dark:text-white font-light mb-10'>{`A seasoned web developer with a passion for programming and gaming. With over three years of experience, I specialize in designing and developing user-friendly websites. Let's connect and explore my work and growth in the field`}</p>
                 <CustomLink href='#projects' type='button' variant='primary'>
                     My Projects
                 </CustomLink>

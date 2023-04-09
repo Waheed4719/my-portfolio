@@ -6,8 +6,10 @@ const Contact = () => (
         <h2 className='mb-4 text-red font-semibold text-md'>CONTACT</h2>
         <h2 className='mb-4 text-black dark:text-white font-semibold text-2xl'>My Contact</h2>
         <p className='mb-6 text-black dark:text-white text-sm heading-5 max-w-[700px] text-center mx-auto'>
-            Esse irure consequat qui irure ullamco cupidatat magna do do. Minim laborum nulla esse
-            et nulla in minim adipisicing. Minim laborum nulla esse et nulla in minim adipisicing.
+            {`If you're interested in working together or have any questions about my services, feel
+            free to reach out to me using the contact form or email provided on this page. I'm
+            always happy to hear from potential clients and collaborators and will do my best to
+            respond to your inquiry as soon as possible.`}
         </p>
         <div className='mb-12 bg-red h-0.5 w-10 mx-auto' />
         <div className='mb-12 grid grid-cols-1 w-full max-w-[1100px] m-auto gap-y-6'>

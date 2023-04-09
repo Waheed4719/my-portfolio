@@ -75,6 +75,13 @@ const Experience = () => {
             <h2 className='mb-4 text-black dark:text-white font-semibold text-2xl'>
                 My Experiences
             </h2>
+
+            <p className='mb-6 text-black dark:text-white text-sm heading-5 max-w-[700px] text-center mx-auto'>
+                In this section, you will find details about my professional experience, including
+                the companies I have worked with in the past and currently work with. I have had the
+                opportunity to collaborate with talented teams on a variety of projects, and I look
+                forward to leveraging this experience to bring value to future projects and clients.
+            </p>
             <div className='mb-12 bg-red h-0.5 w-10 mx-auto' />
             <div className='mt-20 flex flex-col'>
                 <VerticalTimeline lineColor={isDarkMode ? '#fff' : 'darkslategray'}>

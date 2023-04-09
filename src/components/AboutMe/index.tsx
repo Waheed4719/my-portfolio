@@ -12,7 +12,7 @@ const AboutMe = () => (
 
             <div className='flex flex-col items-center justify-start gap-y-3 max-w-[700px] m-auto '>
                 <p className='text-black dark:text-white text-sm text-center mb-4'>
-                    I&apos;m Waheed, a web developer with three years of experience. As a web
+                    I&apos;m Waheed, a web developer with over three years of experience. As a web
                     developer, I excel in creating responsive websites with a user-friendly design.
                     My skills also include bug fixing and backend development, ensuring seamless and
                     efficient website operation. I am passionate about my work and always strive to
