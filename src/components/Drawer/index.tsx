@@ -46,7 +46,7 @@ const Drawer = () => {
                         iconName={isDarkMode ? 'moon' : 'sun'}
                         iconProps={{
                             className:
-                                'ease-in-out duration-300 text-white dark:text-black dark:group-hover:text-white'
+                                'ease-in-out duration-300 text-black dark:text-white dark:group-hover:text-white'
                         }}
                     />
                 </div>
@@ -56,8 +56,7 @@ const Drawer = () => {
                         fill='none'
                         viewBox='0 0 24 24'
                         strokeWidth={1.5}
-                        stroke='#fff'
-                        className='w-10 h-10'
+                        className='w-10 h-10 stroke-black dark:stroke-white'
                     >
                         <path
                             strokeLinecap='round'

@@ -8,7 +8,7 @@ import MyExperience from '../components/MyExperience';
 import Drawer from '../components/Drawer';
 
 export default () => (
-    <div className='bg-[#1a1b1e] dark:bg-white'>
+    <div className='dark:bg-[#1a1b1e] bg-white'>
         <Hero />
         <AboutMe />
         <MyExperience />

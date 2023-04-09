@@ -9,7 +9,7 @@ const StarWrapper = (Component: React.FC, idName: string) => () =>
             initial='hidden'
             whileInView='show'
             viewport={{ once: true, amount: 0.25 }}
-            className=' dark:bg-[whitesmoke] relative z-0  mx-auto text-center p-6 md:p-8'
+            className=' bg-[whitesmoke] dark:bg-transparent relative z-0  mx-auto text-center p-6 md:p-8'
         >
             <span className='hash-span' id={idName}>
                 &nbsp;

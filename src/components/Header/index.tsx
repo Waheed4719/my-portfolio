@@ -4,7 +4,7 @@ import { headerItems } from '../../json/data';
 
 export default () => (
     <div className='h-[80px] p-4 mx-auto bg-[transparent] flex items-center justify-between gap-[20px]'>
-        <Link to='/' className='text-2xl text-white font-semibold dark:text-black '>
+        <Link to='/' className='text-2xl text-black font-semibold dark:text-white '>
             Red<sup>tm</sup>
         </Link>
         <HeaderItemList items={headerItems} />

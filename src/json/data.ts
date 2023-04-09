@@ -37,37 +37,36 @@ export const stacks = [
         icon: 'react',
         title: 'React',
         description:
-            'Aute do tempor et incididunt id sunt ipsum ut fugiat nisi. Dolor tempor magna cupidatat irure voluptate ipsum.'
+            'I use React to build dynamic and responsive user interfaces that are easy to maintain and update, with a focus on performance and accessibility.'
     },
     {
         icon: 'typescript',
         title: 'Typescript',
         description:
-            'Aute do tempor et incididunt id sunt ipsum ut fugiat nisi. Dolor tempor magna cupidatat irure voluptate ipsum.'
+            'I use Typescript to write more robust and maintainable code, with fewer bugs and clearer documentation.'
     },
     {
         icon: 'node',
         title: 'Node JS',
         description:
-            'Aute do tempor et incididunt id sunt ipsum ut fugiat nisi. Dolor tempor magna cupidatat irure voluptate ipsum.'
+            'I use Node to build scalable and high-performance server-side applications that can handle large amounts of data and traffic.'
     },
     {
         icon: 'express',
         title: 'Express',
-        description:
-            'Aute do tempor et incididunt id sunt ipsum ut fugiat nisi. Dolor tempor magna cupidatat irure voluptate ipsum.'
+        description: `I use Express to build fast and scalable web applications, with a flexible and modular architecture that allows me to customize my projects to my clients' needs.`
     },
     {
         icon: 'next',
         title: 'Next JS',
         description:
-            'Aute do tempor et incididunt id sunt ipsum ut fugiat nisi. Dolor tempor magna cupidatat irure voluptate ipsum.'
+            'I use Next to build server-rendered React applications that can be optimized for search engines and provide a better user experience, with faster page load times and smoother navigation.'
     },
     {
         icon: 'vue',
         title: 'Vue',
         description:
-            'Aute do tempor et incididunt id sunt ipsum ut fugiat nisi. Dolor tempor magna cupidatat irure voluptate ipsum.'
+            'I use Vue to build modern and intuitive user interfaces that are easy to customize and integrate with other tools and frameworks.'
     }
 ];
 
@@ -191,32 +190,31 @@ export const services = [
     {
         icon: 'globe',
         title: 'Website Development',
-        description:
-            'Aute do tempor et incididunt id sunt ipsum ut fugiat nisi. Dolor tempor magna cupidatat irure voluptate ipsum.'
+        description: `I specialize in developing custom websites that meet my clients' specific needs, with a focus on usability, accessibility, and performance.`
     },
     {
         icon: 'design',
         title: 'Website Design',
         description:
-            'Aute do tempor et incididunt id sunt ipsum ut fugiat nisi. Dolor tempor magna cupidatat irure voluptate ipsum.'
+            ' I offer design services that help my clients create a unique and engaging online presence, with a modern and user-friendly interface.'
     },
     {
         icon: 'express',
         title: 'API Creation',
         description:
-            'Aute do tempor et incididunt id sunt ipsum ut fugiat nisi. Dolor tempor magna cupidatat irure voluptate ipsum.'
+            'I can help my clients build scalable and secure APIs that enable them to integrate with other systems and services, with a focus on documentation and testing.'
     },
     {
         icon: 'chart',
         title: 'Performance Optimization',
         description:
-            'Aute do tempor et incididunt id sunt ipsum ut fugiat nisi. Dolor tempor magna cupidatat irure voluptate ipsum.'
+            'I can help my clients optimize their websites and applications for speed and performance, using a variety of techniques such as caching, compression, and minification.'
     },
     {
         icon: 'bug',
         title: 'Bug Fixing',
         description:
-            'Aute do tempor et incididunt id sunt ipsum ut fugiat nisi. Dolor tempor magna cupidatat irure voluptate ipsum.'
+            ' I offer debugging and troubleshooting services that help my clients identify and fix issues in their code, with a focus on efficiency and quality assurance.'
     }
 ];
 

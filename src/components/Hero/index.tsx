@@ -4,7 +4,7 @@ import CustomLink from '../common/CustomLink';
 import CoderLottieFile from '../../json/coder-lottie.json';
 
 const Hero = () => (
-    <div className='p-6 min-h-[fit-content] lg:h-[650px] sm:pt-[40px] md:pt-[0px] w-full dark:bg-none bg-gradient-to-b from-[#1e2134] to-[#1a1b1e] dark:bg-[whitesmoke] flex items-center justify-center'>
+    <div className='p-6 min-h-[fit-content] lg:h-[650px] sm:pt-[40px] md:pt-[0px] w-full bg-none dark:bg-gradient-to-b dark:from-[#1e2134] dark:to-[#1a1b1e] bg-[whitesmoke] flex items-center justify-center'>
         <div className='mx-auto w-[1000px] flex flex-wrap justify-center md:justify-between max-w-full'>
             <div className='w-[450px] md:p-4'>
                 <div className='flex gap-4 mb-10'>
@@ -16,7 +16,7 @@ const Hero = () => (
                             iconName='facebook'
                             iconProps={{
                                 className:
-                                    'ease-in-out duration-300 text-white dark:text-black dark:group-hover:text-white'
+                                    'ease-in-out duration-300 text-black dark:text-white dark:group-hover:text-white'
                             }}
                         />
                     </a>
@@ -28,7 +28,7 @@ const Hero = () => (
                             iconName='linkedIn'
                             iconProps={{
                                 className:
-                                    'ease-in-out duration-300 text-white dark:text-black dark:group-hover:text-white'
+                                    'ease-in-out duration-300 text-black dark:text-white dark:group-hover:text-white'
                             }}
                         />
                     </a>
@@ -41,7 +41,7 @@ const Hero = () => (
                             iconName='github'
                             iconProps={{
                                 className:
-                                    'ease-in-out duration-300 text-white dark:text-black dark:group-hover:text-white'
+                                    'ease-in-out duration-300 text-black dark:text-white dark:group-hover:text-white'
                             }}
                         />
                     </a>
@@ -53,15 +53,15 @@ const Hero = () => (
                             iconName='upwork'
                             iconProps={{
                                 className:
-                                    'ease-in-out duration-300 text-white dark:text-black dark:group-hover:text-white'
+                                    'ease-in-out duration-300 text-black dark:text-white dark:group-hover:text-white'
                             }}
                         />
                     </a>
                 </div>
-                <h1 className='text-white dark:text-black font-bold text-4xl mb-4'>
+                <h1 className='text-black dark:text-white font-bold text-4xl mb-4'>
                     I am Waheed Uddin Ahmed
                 </h1>
-                <p className='text-white dark:text-black font-light mb-10'>{`A seasoned web developer with a passion for programming and gaming. With three years of experience, I specialize in designing and developing user-friendly websites. Let's connect and explore my work and growth in the field`}</p>
+                <p className='text-black dark:text-white font-light mb-10'>{`A seasoned web developer with a passion for programming and gaming. With three years of experience, I specialize in designing and developing user-friendly websites. Let's connect and explore my work and growth in the field`}</p>
                 <CustomLink href='#projects' type='button' variant='primary'>
                     My Projects
                 </CustomLink>

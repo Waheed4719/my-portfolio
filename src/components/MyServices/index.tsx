@@ -10,11 +10,11 @@ const MyServices = () => {
         <div
             id='services'
             ref={ref}
-            className='mx-auto text-center p-6 md:p-8 dark:bg-[whitesmoke] '
+            className='mx-auto text-center p-6 md:p-8 bg-[whitesmoke] dark:bg-transparent'
         >
             <h2 className='mb-4 text-red font-semibold text-md'>SERVICES</h2>
-            <h2 className='mb-4 text-white dark:text-black text-2xl'>My Services</h2>
-            <p className='mb-6 text-white dark:text-black text-sm heading-5 max-w-[700px] text-center mx-auto'>
+            <h2 className='mb-4 text-black font-semibold dark:text-white text-2xl'>My Services</h2>
+            <p className='mb-6 text-black dark:text-white text-sm heading-5 max-w-[700px] text-center mx-auto'>
                 I offer comprehensive website development services, including building, design,
                 optimization and bug fixing. Let me help you create or improve your online presence.
             </p>

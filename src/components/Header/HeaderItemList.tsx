@@ -21,7 +21,7 @@ const HeaderItemList = ({ items }: Props) => {
                     iconName={isDarkMode ? 'moon' : 'sun'}
                     iconProps={{
                         className:
-                            'ease-in-out duration-300 text-white dark:text-black dark:group-hover:text-white'
+                            'ease-in-out duration-300 text-black dark:text-white dark:group-hover:text-white group-hover:text-white'
                     }}
                 />
             </div>

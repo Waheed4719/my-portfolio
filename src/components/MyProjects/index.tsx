@@ -11,11 +11,11 @@ const MyProjects = () => {
         <div
             id='projects'
             ref={ref}
-            className='mx-auto text-center p-6 md:p-8 dark:bg-[whitesmoke]'
+            className='mx-auto text-center p-6 md:p-8 bg-[whitesmoke] dark:bg-transparent'
         >
             <h2 className='mb-4 text-red font-semibold text-md'>PROJECTS</h2>
-            <h2 className='mb-4 text-white dark:text-black text-2xl'>My Projects</h2>
-            <p className='mb-6 text-white dark:text-black text-sm heading-5 max-w-[700px] text-center mx-auto'>
+            <h2 className='mb-4 text-black font-semiboldd dark:text-white text-2xl'>My Projects</h2>
+            <p className='mb-6 text-black dark:text-white text-sm heading-5 max-w-[700px] text-center mx-auto'>
                 Esse irure consequat qui irure ullamco cupidatat magna do do. Minim laborum nulla
                 esse et nulla in minim adipisicing. Minim laborum nulla esse et nulla in minim
                 adipisicing.
