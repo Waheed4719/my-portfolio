@@ -4,7 +4,7 @@ import CustomLink from '../common/CustomLink';
 const AboutMe = () => (
     <div id='about' className='mx-auto text-center p-6 md:p-8 '>
         <h2 className='mb-4 text-red font-semibold text-md'>ABOUT</h2>
-        <h2 className='mb-4 text-black dark:text-white text-2xl'>About Me</h2>
+        <h2 className='mb-4 text-black dark:text-white font-semibold text-2xl'>About Me</h2>
         <div className='w-[1100px] max-w-full m-auto grid grid-cols-1 gap-3'>
             <div className='flex items-center justify-center mb-6'>
                 <img src={MyImage} alt='profile' className='rounded-full w-[120px]' />

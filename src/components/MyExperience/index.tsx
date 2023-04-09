@@ -72,7 +72,9 @@ const Experience = () => {
     return (
         <>
             <h2 className='mb-4 text-red font-semibold text-md'>Experience</h2>
-            <h2 className='mb-4 text-black dark:text-white text-2xl'>My Experiences</h2>
+            <h2 className='mb-4 text-black dark:text-white font-semibold text-2xl'>
+                My Experiences
+            </h2>
             <div className='mb-12 bg-red h-0.5 w-10 mx-auto' />
             <div className='mt-20 flex flex-col'>
                 <VerticalTimeline lineColor={isDarkMode ? '#fff' : 'darkslategray'}>
