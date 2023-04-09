@@ -16,7 +16,7 @@ const Hero = () => (
                             iconName='facebook'
                             iconProps={{
                                 className:
-                                    'ease-in-out duration-300 text-black dark:text-white dark:group-hover:text-white'
+                                    'ease-in-out duration-300 text-black dark:text-white group-hover:text-white'
                             }}
                         />
                     </a>
@@ -28,7 +28,7 @@ const Hero = () => (
                             iconName='linkedIn'
                             iconProps={{
                                 className:
-                                    'ease-in-out duration-300 text-black dark:text-white dark:group-hover:text-white'
+                                    'ease-in-out duration-300 text-black dark:text-white group-hover:text-white'
                             }}
                         />
                     </a>
@@ -41,7 +41,7 @@ const Hero = () => (
                             iconName='github'
                             iconProps={{
                                 className:
-                                    'ease-in-out duration-300 text-black dark:text-white dark:group-hover:text-white'
+                                    'ease-in-out duration-300 text-black dark:text-white group-hover:text-white'
                             }}
                         />
                     </a>
@@ -53,7 +53,7 @@ const Hero = () => (
                             iconName='upwork'
                             iconProps={{
                                 className:
-                                    'ease-in-out duration-300 text-black dark:text-white dark:group-hover:text-white'
+                                    'ease-in-out duration-300 text-black dark:text-white group-hover:text-white'
                             }}
                         />
                     </a>

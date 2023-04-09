@@ -12,7 +12,7 @@ const LinkButton = ({ variant = 'primary', className, children, ...rest }: LinkB
         return (
             <a
                 {...rest}
-                className={`ease-in-out duration-300 px-10 py-2 border-2 hover:bg-red dark:hover:text-white bg-transparent border-red font-semibold text-sm text-black dark:text-white rounded-full shadow-sm ${
+                className={`ease-in-out duration-300 px-10 py-2 border-2 hover:bg-red hover:text-white dark:hover:text-white bg-transparent border-red font-semibold text-sm text-black dark:text-white rounded-full shadow-sm ${
                     className && className
                 }`}
             >
