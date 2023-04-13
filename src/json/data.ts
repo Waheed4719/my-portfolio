@@ -11,6 +11,7 @@ import WishbuxImage from '../assets/images/Wishbux.png';
 import MelaniesPortfolioImage from '../assets/images/MelaniePortfolio.png';
 import FoodDeliveryAppImage from '../assets/images/Food Delivery.png';
 import NewsAppImage from '../assets/images/News App.png';
+import GPTArticlesImage from '../assets/images/GPTArticles.png';
 
 import {
     css,
@@ -176,6 +177,15 @@ export const projects = [
         description: 'A Landing page design with beautiful animations and responsiveness.',
         technologies: ['React', 'TailwindCSS', 'Framer Motion'],
         link: 'https://wishbux.vercel.app/'
+    },
+    {
+        image: GPTArticlesImage,
+        title: 'GPT Articles',
+        github: '',
+        description:
+            'A web application for generating literature review based on multiple uploaded articles using GPT-3.',
+        technologies: ['React', 'TailwindCSS', 'Framer Motion'],
+        link: 'https://gpt-articles.vercel.app/'
     },
     {
         image: MelaniesPortfolioImage,
