@@ -184,7 +184,7 @@ export const projects = [
         github: '',
         description:
             'A web application for generating literature review based on multiple uploaded articles using GPT-3.',
-        technologies: ['React', 'TailwindCSS', 'Framer Motion'],
+        technologies: ['Next JS', 'TailwindCSS', 'Framer Motion'],
         link: 'https://gpt-articles.vercel.app/'
     },
     {
