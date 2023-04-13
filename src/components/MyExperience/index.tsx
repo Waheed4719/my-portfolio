@@ -71,7 +71,7 @@ const Experience = () => {
     const windowSize = useWindowSize();
     return (
         <>
-            <h2 className='mb-4 text-red font-semibold text-md'>Experience</h2>
+            <h2 className='mb-4 text-red font-semibold text-md'>EXPERIENCE</h2>
             <h2 className='mb-4 text-black dark:text-white font-semibold text-2xl'>
                 My Experiences
             </h2>
