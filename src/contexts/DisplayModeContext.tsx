@@ -15,7 +15,7 @@ export const DisplayModeContext = createContext<DisplayModeContextState>({
 
 const htmlDocument = document.getElementsByTagName('html')[0];
 const toggleDisplayModeClass = (displayMode: boolean): void => {
-    if (!displayMode) {
+    if (displayMode) {
         htmlDocument.classList.add('dark');
     } else {
         htmlDocument.classList.remove('dark');
