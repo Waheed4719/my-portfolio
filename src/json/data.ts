@@ -12,6 +12,7 @@ import MelaniesPortfolioImage from '../assets/images/MelaniePortfolio.png';
 import FoodDeliveryAppImage from '../assets/images/Food Delivery.png';
 import NewsAppImage from '../assets/images/News App.png';
 import GPTArticlesImage from '../assets/images/GPTArticles.png';
+import CodeRedImage from '../assets/images/CodeRed.png';
 
 import {
     css,
@@ -73,13 +74,13 @@ export const stacks = [
 
 export const projects = [
     {
-        image: MedfixImage,
-        title: 'Medfix Healthcare',
-        github: '',
+        image: CodeRedImage,
+        title: `Code Red`,
+        github: 'https://github.com/Waheed4719/Code-Red',
         description:
-            'A SaaS web application for virtual doctor consultations with video, audio, calendar, blogs, Google Maps and Stripe Connect integration.',
-        technologies: ['React', 'Socket.io', 'MongoDB', 'ExpressJS'],
-        link: 'https://test.medfixhealth.com'
+            'A problem solving platform for developers to share their solutions and learn from others.',
+        technologies: ['Next JS', 'TailwindCSS', 'Firebase', 'CodeMirror'],
+        link: 'https://code-red-one.vercel.app/'
     },
     {
         image: AssetIntelImage,
@@ -98,6 +99,15 @@ export const projects = [
             'A mobile application for virtual doctor consultations with video, audio, calendar, Google Maps integration, and patient report generation',
         technologies: ['React Native', 'SocketIo', 'ExpressJS', 'MongoDB'],
         link: 'https://play.google.com/store/apps/details?id=com.ihs.myhealth'
+    },
+    {
+        image: MedfixImage,
+        title: 'Medfix Healthcare',
+        github: '',
+        description:
+            'A SaaS web application for virtual doctor consultations with video, audio, calendar, blogs, Google Maps and Stripe Connect integration.',
+        technologies: ['React', 'Socket.io', 'MongoDB', 'ExpressJS'],
+        link: 'https://test.medfixhealth.com'
     },
     {
         image: FoodDeliveryAppImage,
