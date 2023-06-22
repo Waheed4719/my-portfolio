@@ -73,15 +73,7 @@ export const stacks = [
 ];
 
 export const projects = [
-    {
-        image: CodeRedImage,
-        title: `Code Red`,
-        github: 'https://github.com/Waheed4719/Code-Red',
-        description:
-            'A problem solving platform for developers to share their solutions and learn from others.',
-        technologies: ['Next JS', 'TailwindCSS', 'Firebase', 'CodeMirror'],
-        link: 'https://code-red-one.vercel.app/'
-    },
+ 
     {
         image: AssetIntelImage,
         title: 'Asset Intel',
@@ -198,13 +190,22 @@ export const projects = [
         link: 'https://gpt-articles.vercel.app/'
     },
     {
-        image: MelaniesPortfolioImage,
-        title: `Melanie's Portfolio`,
-        github: '',
-        description: 'A simple portfolio design with smooth animations and responsiveness.',
-        technologies: ['React', 'TailwindCSS', 'Framer Motion'],
-        link: 'https://melanie-portfolio-nu.vercel.app/'
+        image: CodeRedImage,
+        title: `Code Red`,
+        github: 'https://github.com/Waheed4719/Code-Red',
+        description:
+            'A problem solving platform for developers to share their solutions and learn from others.',
+        technologies: ['Next JS', 'TailwindCSS', 'Firebase', 'CodeMirror'],
+        link: 'https://code-red-one.vercel.app/'
     }
+    // {
+    //     image: MelaniesPortfolioImage,
+    //     title: `Melanie's Portfolio`,
+    //     github: '',
+    //     description: 'A simple portfolio design with smooth animations and responsiveness.',
+    //     technologies: ['React', 'TailwindCSS', 'Framer Motion'],
+    //     link: 'https://melanie-portfolio-nu.vercel.app/'
+    // }
 ];
 export const services = [
     {
