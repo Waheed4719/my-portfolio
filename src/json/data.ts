@@ -84,12 +84,12 @@ export const projects = [
     },
     {
         image: MyHealthImage,
-        title: 'My Health App',
+        title: 'Call My Doctor',
         github: '',
         description:
             'A mobile application for virtual doctor consultations with video, audio, calendar, Google Maps integration, and patient report generation',
         technologies: ['React Native', 'SocketIo', 'ExpressJS', 'MongoDB'],
-        link: 'https://play.google.com/store/apps/details?id=com.ihs.myhealth'
+        link: 'https://play.google.com/store/apps/details?id=com.ihs.callmydoctor'
     },
     {
         image: MedfixImage,
