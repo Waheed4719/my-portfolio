@@ -13,6 +13,8 @@ import FoodDeliveryAppImage from '../assets/images/Food Delivery.png';
 import NewsAppImage from '../assets/images/News App.png';
 import GPTArticlesImage from '../assets/images/GPTArticles.png';
 import CodeRedImage from '../assets/images/CodeRed.png';
+import RedPodImage from '../assets/images/RedPod.png';
+import RocketRailsImage from '../assets/images/RocketRails.png'
 
 import {
     css,
@@ -198,12 +200,20 @@ export const projects = [
         link: 'https://code-red-one.vercel.app/'
     },
     {
-        image: MelaniesPortfolioImage,
-        title: `Melanie's Portfolio`,
+        image: RocketRailsImage,
+        title: `Rocket Rails`,
         github: '',
-        description: 'A simple portfolio design with smooth animations and responsiveness.',
-        technologies: ['React', 'TailwindCSS', 'Framer Motion'],
-        link: 'https://melanie-portfolio-nu.vercel.app/'
+        description: 'A Task Management System for teams to manage their projects and tasks.',
+        technologies: ['NuxtJS', 'Vue 3', 'TailwindCSS', 'HeadlessUI'],
+        link: 'https://rocket-rails.vercel.app/'
+    },
+    {
+        image: RedPodImage,
+        title: `Red Pod`,
+        github: '',
+        description: 'A Podcast web application for listening to podcasts and creating your own.',
+        technologies: ['NextJS', 'React 18', 'TailwindCSS', 'HeadlessUI'],
+        link: 'https://red-pod.vercel.app/'
     }
 ];
 export const services = [
