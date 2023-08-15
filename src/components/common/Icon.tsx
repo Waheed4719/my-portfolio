@@ -8,7 +8,8 @@ import {
     SiNextdotjs,
     SiExpress,
     SiReact,
-    SiVuedotjs
+    SiVuedotjs,
+    SiNuxtdotjs
 } from 'react-icons/si';
 
 import {
@@ -45,7 +46,8 @@ const GetIcon = ({ iconName, iconProps }: Props): JSX.Element => {
         sun: <BsSun {...iconProps} />,
         github: <AiOutlineGithub {...iconProps} />,
         link: <AiOutlineLink {...iconProps} />,
-        upwork: <SiUpwork {...iconProps} />
+        upwork: <SiUpwork {...iconProps} />,
+        nuxt: <SiNuxtdotjs {...iconProps} />
     };
     return iconObj[iconName ?? 'react'];
 };

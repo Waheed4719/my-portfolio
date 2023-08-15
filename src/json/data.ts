@@ -8,7 +8,6 @@ import MetaverseImage from '../assets/images/Metaverse.png';
 import UphomeImage from '../assets/images/Uphome.png';
 import BoxmindImage from '../assets/images/Boxmind.png';
 import WishbuxImage from '../assets/images/Wishbux.png';
-import MelaniesPortfolioImage from '../assets/images/MelaniePortfolio.png';
 import FoodDeliveryAppImage from '../assets/images/Food Delivery.png';
 import NewsAppImage from '../assets/images/News App.png';
 import GPTArticlesImage from '../assets/images/GPTArticles.png';
@@ -55,10 +54,16 @@ export const stacks = [
         description:
             'I use Node to build scalable and high-performance server-side applications that can handle large amounts of data and traffic.'
     },
+    // {
+    //     icon: 'express',
+    //     title: 'Express',
+    //     description: `I use Express to build fast and scalable web applications, with a flexible and modular architecture that allows me to customize my projects to my clients' needs.`
+    // },
     {
-        icon: 'express',
-        title: 'Express',
-        description: `I use Express to build fast and scalable web applications, with a flexible and modular architecture that allows me to customize my projects to my clients' needs.`
+        icon: 'nuxt',
+        title: 'Nuxt JS',
+        description:
+            'I use Nuxt to build server-rendered React applications that can be optimized for search engines and provide a better user experience, with faster page load times and smoother navigation.'
     },
     {
         icon: 'next',
