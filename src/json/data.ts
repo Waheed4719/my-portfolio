@@ -2,7 +2,7 @@ import AssetIntelImage from '../assets/images/PavementAI.png';
 import MedfixImage from '../assets/images/Medfix.png';
 import MernChatImage from '../assets/images/MernChat.png';
 import MyHealthImage from '../assets/images/MyHealth.png';
-import LegaltekImage from '../assets/images/Legaltek.png';
+import JurisnexaImage from '../assets/images/Jurisnexa.png';
 import XukiniImage from '../assets/images/Xukini.png';
 import MetaverseImage from '../assets/images/Metaverse.png';
 import UphomeImage from '../assets/images/Uphome.png';
@@ -13,7 +13,7 @@ import NewsAppImage from '../assets/images/News App.png';
 import GPTArticlesImage from '../assets/images/GPTArticles.png';
 import CodeRedImage from '../assets/images/CodeRed.png';
 import RedPodImage from '../assets/images/RedPod.png';
-import RocketRailsImage from '../assets/images/RocketRails.png'
+import RocketRailsImage from '../assets/images/RocketRails.png';
 
 import {
     css,
@@ -81,13 +81,13 @@ export const stacks = [
 
 export const projects = [
     {
-        image: AssetIntelImage,
-        title: 'Asset Intel',
+        image: JurisnexaImage,
+        title: 'Jurisnexa',
         github: '',
         description:
-            'A Web application for monitoring and reporting pavement defects using interactive maps and search/filter functionality, with machine learning-powered crack detection.',
-        technologies: ['AWS', 'React TS', 'Python', 'Maps'],
-        link: 'http://cityscan-roadeye-app-stage.s3-website-us-west-2.amazonaws.com/performance-monitoring/road/pavement/performance-map'
+            'A SaaS web application for virtual lawyer consultations, lawfirm management, and client communication, with video, audio, calendar and Google Maps integration, catering to the needs of 3 types of users: clients, lawyers, and lawfirm',
+        technologies: ['React', 'Socket.io', 'MongoDB', 'ExpressJS'],
+        link: 'https://test.jurisnexa.com/'
     },
     {
         image: MyHealthImage,
@@ -97,6 +97,15 @@ export const projects = [
             'A mobile application for virtual doctor consultations with video, audio, calendar, Google Maps integration, and patient report generation',
         technologies: ['React Native', 'SocketIo', 'ExpressJS', 'MongoDB'],
         link: 'https://play.google.com/store/apps/details?id=com.ihs.callmydoctor'
+    },
+    {
+        image: AssetIntelImage,
+        title: 'Asset Intel',
+        github: '',
+        description:
+            'A Web application for monitoring and reporting pavement defects using interactive maps and search/filter functionality, with machine learning-powered crack detection.',
+        technologies: ['AWS', 'React TS', 'Python', 'Maps'],
+        link: 'http://cityscan-roadeye-app-arizona-dev.s3-website-us-west-2.amazonaws.com/performance-monitoring/road/asset/performance-map'
     },
     {
         image: MedfixImage,
@@ -125,15 +134,7 @@ export const projects = [
         technologies: ['Android', 'Java', 'NewsAPI', 'Retrofit'],
         link: ''
     },
-    {
-        image: LegaltekImage,
-        title: 'Legaltek',
-        github: '',
-        description:
-            'A SaaS web application for virtual lawyer consultations, lawfirm management, and client communication, with video, audio, calendar and Google Maps integration, catering to the needs of 3 types of users: clients, lawyers, and lawfirm',
-        technologies: ['React', 'Socket.io', 'MongoDB', 'ExpressJS'],
-        link: ''
-    },
+
     {
         image: XukiniImage,
         title: 'Xukini',
