@@ -14,6 +14,7 @@ import GPTArticlesImage from '../assets/images/GPTArticles.png';
 import CodeRedImage from '../assets/images/CodeRed.png';
 import RedPodImage from '../assets/images/RedPod.png';
 import RocketRailsImage from '../assets/images/RocketRails.png';
+import TushpaLabImage from '../assets/images/TushpaLab.png';
 
 import {
     css,
@@ -105,7 +106,7 @@ export const projects = [
         description:
             'A Web application for monitoring and reporting pavement defects using interactive maps and search/filter functionality, with machine learning-powered crack detection.',
         technologies: ['AWS', 'React TS', 'Python', 'Maps'],
-        link: 'http://cityscan-roadeye-app-arizona-dev.s3-website-us-west-2.amazonaws.com/performance-monitoring/road/asset/performance-map'
+        link: 'http://cityscan-roadeye-app-st-albert-dev.s3-website-us-west-2.amazonaws.com/performance-monitoring/road/pavement/performance-map'
     },
     {
         image: MedfixImage,
@@ -115,6 +116,15 @@ export const projects = [
             'A SaaS web application for virtual doctor consultations with video, audio, calendar, blogs, Google Maps and Stripe Connect integration.',
         technologies: ['React', 'Socket.io', 'MongoDB', 'ExpressJS'],
         link: 'https://test.medfixhealth.com'
+    },
+    {
+        image: TushpaLabImage,
+        title: 'Tushpa Lab',
+        github: '',
+        description:
+            'A Marketing site for promoting a premium beverage brand.',
+        technologies: ['React', 'Next JS'],
+        link: 'https://www.tushpalab.am/en'
     },
     {
         image: FoodDeliveryAppImage,
