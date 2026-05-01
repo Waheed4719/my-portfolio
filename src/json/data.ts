@@ -15,6 +15,7 @@ import CodeRedImage from '../assets/images/CodeRed.png';
 import RedPodImage from '../assets/images/RedPod.png';
 import RocketRailsImage from '../assets/images/RocketRails.png';
 import TushpaLabImage from '../assets/images/TushpaLab.png';
+import FizziCloneImage from '../assets/images/fizzi-clone.png';
 
 import {
     css,
@@ -116,6 +117,15 @@ export const projects = [
             'A SaaS web application for virtual doctor consultations with video, audio, calendar, blogs, Google Maps and Stripe Connect integration.',
         technologies: ['React', 'Socket.io', 'MongoDB', 'ExpressJS'],
         link: 'https://test.medfixhealth.com'
+    },
+    {
+        image: FizziCloneImage,
+        title: 'Fizzi',
+        github: '',
+        description:
+            'A 3d clone of the fizzi website with smooth animations and responsiveness.',
+        technologies: ['React', 'Next JS'],
+        link: 'https://fizzi-clone.vercel.app/'
     },
     {
         image: TushpaLabImage,
