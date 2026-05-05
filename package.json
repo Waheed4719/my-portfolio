@@ -46,9 +46,6 @@
             "last 1 safari version"
         ]
     },
-    "engines": {
-        "node": "24.x"
-    },
     "devDependencies": {
         "@types/jest": "^28.1.8",
         "@types/node": "^18.7.13",

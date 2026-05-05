@@ -3,8 +3,8 @@ import emailjs from '@emailjs/browser';
 const Form = () => {
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        const { REACT_APP_EMAILJS_SERVICE_ID, REACT_APP_EMAILJS_TEMPLATE_ID } = process.env;
-        if (!REACT_APP_EMAILJS_SERVICE_ID || !REACT_APP_EMAILJS_TEMPLATE_ID) {
+        const { REACT_APP_EMAILJS_SERVICE_ID, REACT_APP_EMAILJS_TEMPLATE_ID, REACT_APP_EMAILJS_PUBLIC_KEY } = process.env;
+        if (!REACT_APP_EMAILJS_SERVICE_ID || !REACT_APP_EMAILJS_TEMPLATE_ID || !REACT_APP_EMAILJS_PUBLIC_KEY) {
             console.log('No env variables found');
             return;
         }
@@ -16,7 +16,8 @@ const Form = () => {
             .send(
                 REACT_APP_EMAILJS_SERVICE_ID ?? '',
                 REACT_APP_EMAILJS_TEMPLATE_ID ?? '',
-                templateParams
+                templateParams,
+                REACT_APP_EMAILJS_PUBLIC_KEY ?? ''
             )
             .then(
                 (response) => {
