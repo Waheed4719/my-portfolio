@@ -16,6 +16,8 @@ import RedPodImage from '../assets/images/RedPod.png';
 import RocketRailsImage from '../assets/images/RocketRails.png';
 import TushpaLabImage from '../assets/images/TushpaLab.png';
 import FizziCloneImage from '../assets/images/fizzi-clone.png';
+import PokedexImage from '../assets/images/Pokedex.png';
+import CollectCarImage from '../assets/images/Collect-Car.png';
 
 import {
     css,
@@ -83,22 +85,13 @@ export const stacks = [
 
 export const projects = [
     {
-        image: JurisnexaImage,
-        title: 'Jurisnexa',
-        github: '',
-        description:
-            'A SaaS web application for virtual lawyer consultations, lawfirm management, and client communication, with video, audio, calendar and Google Maps integration, catering to the needs of 3 types of users: clients, lawyers, and lawfirm',
-        technologies: ['React', 'Socket.io', 'MongoDB', 'ExpressJS'],
-        link: 'https://test.jurisnexa.com/'
-    },
-    {
         image: MyHealthImage,
         title: 'Call My Doctor',
         github: '',
         description:
             'A mobile application for virtual doctor consultations with video, audio, calendar, Google Maps integration, and patient report generation',
         technologies: ['React Native', 'SocketIo', 'ExpressJS', 'MongoDB'],
-        link: 'https://play.google.com/store/apps/details?id=com.ihs.callmydoctor'
+        link: ''
     },
     {
         image: AssetIntelImage,
@@ -116,45 +109,17 @@ export const projects = [
         description:
             'A SaaS web application for virtual doctor consultations with video, audio, calendar, blogs, Google Maps and Stripe Connect integration.',
         technologies: ['React', 'Socket.io', 'MongoDB', 'ExpressJS'],
-        link: 'https://test.medfixhealth.com'
-    },
-    {
-        image: FizziCloneImage,
-        title: 'Fizzi',
-        github: '',
-        description:
-            'A 3d clone of the fizzi website with smooth animations and responsiveness.',
-        technologies: ['React', 'Next JS'],
-        link: 'https://fizzi-clone.vercel.app/'
-    },
-    {
-        image: TushpaLabImage,
-        title: 'Tushpa Lab',
-        github: '',
-        description:
-            'A Marketing site for promoting a premium beverage brand.',
-        technologies: ['React', 'Next JS'],
-        link: 'https://www.tushpalab.am/en'
-    },
-    {
-        image: FoodDeliveryAppImage,
-        title: 'Food Delivery App',
-        github: 'https://github.com/Waheed4719/Food-delivery-App',
-        description:
-            'A mobile application for ordering food from restaurants, with features such as online ordering, payment processing, and delivery tracking. (In Progress)',
-        technologies: ['React Native', 'SocketIo', 'ExpressJS', 'MongoDB'],
         link: ''
     },
     {
-        image: NewsAppImage,
-        title: 'News App',
-        github: 'https://github.com/Waheed4719/News-App',
+        image: JurisnexaImage,
+        title: 'Jurisnexa',
+        github: '',
         description:
-            'A mobile application for reading news from different sources, with features such as search, bookmarking, and sharing. (In Progress)',
-        technologies: ['Android', 'Java', 'NewsAPI', 'Retrofit'],
+            'A SaaS web application for virtual lawyer consultations, lawfirm management, and client communication, with video, audio, calendar and Google Maps integration, catering to the needs of multiple user types.',
+        technologies: ['React', 'Socket.io', 'MongoDB', 'ExpressJS'],
         link: ''
     },
-
     {
         image: XukiniImage,
         title: 'Xukini',
@@ -165,39 +130,38 @@ export const projects = [
         link: ''
     },
     {
-        image: MernChatImage,
-        title: 'Mern Chat App',
-        github: 'https://github.com/Waheed4719/Mern-Chat-App',
+        image: CollectCarImage,
+        title: 'Collect Car',
+        github: '',
         description:
-            'A Web application for real time chat and media sharing using Neophormic design.',
-        technologies: ['React', 'SocketIo', 'ExpressJS', 'MongoDB'],
-        link: 'https://mern-chat-app-dilc.onrender.com'
+            'A 3d web application for showcasing cars with smooth animations and responsiveness.',
+        technologies: ['React', 'Next JS', 'TailwindCSS', 'ThreeJS'],
+        link: 'https://collect-car.vercel.app/'
     },
     {
-        image: UphomeImage,
-        title: 'Uphome',
-        github: 'https://github.com/Waheed4719/UpHome',
+        image: PokedexImage,
+        title: 'Pokedex',
+        github: '',
         description:
-            'A web application is a professional platform for searching rental properties in different locations. Users can apply filters like price, number of bedrooms, and furniture to refine their search results.',
-        technologies: ['React', 'TailwindCSS'],
-        link: 'https://uphome.vercel.app/'
-    },
-    {
-        image: MetaverseImage,
-        title: 'Metaverse Page',
-        github: 'https://github.com/Waheed4719/Metaverse',
-        description:
-            'A Single page design for metaverse with smooth animations, responsiveness and day/night toggle.',
-        technologies: ['React', 'Next JS', 'Framer Motion'],
-        link: 'https://metaverse-six-sigma.vercel.app/'
-    },
-    {
-        image: BoxmindImage,
-        title: 'Boxmind',
-        github: 'https://github.com/Waheed4719/Boxmind',
-        description: 'A Single page design with grid layout, responsiveness and day/night toggle.',
+            'A Pokemon Encyclopedia web application with search and filter functionality, and a collection feature for users to keep track of their favorite Pokemon.',
         technologies: ['React', 'Next JS', 'TailwindCSS'],
-        link: 'https://boxmind.vercel.app/'
+        link: 'https://pokedex-next-eight-lovat.vercel.app'
+    },
+    {
+        image: FizziCloneImage,
+        title: 'Fizzi',
+        github: '',
+        description: 'A 3d clone of the fizzi website with smooth animations and responsiveness.',
+        technologies: ['React', 'Next JS', 'Three JS', 'TailwindCSS'],
+        link: 'https://fizzi-clone.vercel.app/'
+    },
+    {
+        image: TushpaLabImage,
+        title: 'Tushpa Lab',
+        github: '',
+        description: 'A Marketing site for promoting a premium beverage brand.',
+        technologies: ['React', 'Next JS'],
+        link: 'https://www.tushpalab.am/en'
     },
     {
         image: WishbuxImage,
@@ -207,24 +171,7 @@ export const projects = [
         technologies: ['React', 'TailwindCSS', 'Framer Motion'],
         link: 'https://wishbux.vercel.app/'
     },
-    {
-        image: GPTArticlesImage,
-        title: 'GPT Articles',
-        github: '',
-        description:
-            'A web application for generating literature review based on multiple uploaded articles using GPT-3.',
-        technologies: ['Next JS', 'TailwindCSS', 'Framer Motion'],
-        link: 'https://gpt-articles.vercel.app/'
-    },
-    {
-        image: CodeRedImage,
-        title: `Code Red`,
-        github: 'https://github.com/Waheed4719/Code-Red',
-        description:
-            'A problem solving platform for developers to share their solutions and learn from others.',
-        technologies: ['Next JS', 'TailwindCSS', 'Firebase', 'CodeMirror'],
-        link: 'https://code-red-one.vercel.app/'
-    },
+
     {
         image: RocketRailsImage,
         title: `Rocket Rails`,
@@ -232,15 +179,87 @@ export const projects = [
         description: 'A Task Management System for teams to manage their projects and tasks.',
         technologies: ['NuxtJS', 'Vue 3', 'TailwindCSS', 'HeadlessUI'],
         link: 'https://rocket-rails.vercel.app/'
-    },
-    {
-        image: RedPodImage,
-        title: `Red Pod`,
-        github: '',
-        description: 'A Podcast web application for listening to podcasts and creating your own.',
-        technologies: ['NextJS', 'React 18', 'TailwindCSS', 'HeadlessUI'],
-        link: 'https://red-pod.vercel.app/'
     }
+    // {
+    //     image: FoodDeliveryAppImage,
+    //     title: 'Food Delivery App',
+    //     github: 'https://github.com/Waheed4719/Food-delivery-App',
+    //     description:
+    //         'A mobile application for ordering food from restaurants, with features such as online ordering, payment processing, and delivery tracking. (In Progress)',
+    //     technologies: ['React Native', 'SocketIo', 'ExpressJS', 'MongoDB'],
+    //     link: ''
+    // },
+    // {
+    //     image: NewsAppImage,
+    //     title: 'News App',
+    //     github: 'https://github.com/Waheed4719/News-App',
+    //     description:
+    //         'A mobile application for reading news from different sources, with features such as search, bookmarking, and sharing. (In Progress)',
+    //     technologies: ['Android', 'Java', 'NewsAPI', 'Retrofit'],
+    //     link: ''
+    // },
+    //  {
+    //     image: MernChatImage,
+    //     title: 'Mern Chat App',
+    //     github: 'https://github.com/Waheed4719/Mern-Chat-App',
+    //     description:
+    //         'A Web application for real time chat and media sharing using Neophormic design.',
+    //     technologies: ['React', 'SocketIo', 'ExpressJS', 'MongoDB'],
+    //     link: 'https://mern-chat-app-dilc.onrender.com'
+    // },
+    // {
+    //     image: RedPodImage,
+    //     title: `Red Pod`,
+    //     github: '',
+    //     description: 'A Podcast web application for listening to podcasts and creating your own.',
+    //     technologies: ['NextJS', 'React 18', 'TailwindCSS', 'HeadlessUI'],
+    //     link: 'https://red-pod.vercel.app/'
+    // },
+    // {
+    //     image: UphomeImage,
+    //     title: 'Uphome',
+    //     github: 'https://github.com/Waheed4719/UpHome',
+    //     description:
+    //         'A web application is a professional platform for searching rental properties in different locations. Users can apply filters like price, number of bedrooms, and furniture to refine their search results.',
+    //     technologies: ['React', 'TailwindCSS'],
+    //     link: 'https://uphome.vercel.app/'
+    // },
+    // {
+    //     image: MetaverseImage,
+    //     title: 'Metaverse Page',
+    //     github: 'https://github.com/Waheed4719/Metaverse',
+    //     description:
+    //         'A Single page design for metaverse with smooth animations, responsiveness and day/night toggle.',
+    //     technologies: ['React', 'Next JS', 'Framer Motion'],
+    //     link: 'https://metaverse-six-sigma.vercel.app/'
+    // },
+    // {
+    //     image: BoxmindImage,
+    //     title: 'Boxmind',
+    //     github: 'https://github.com/Waheed4719/Boxmind',
+    //     description: 'A Single page design with grid layout, responsiveness and day/night toggle.',
+    //     technologies: ['React', 'Next JS', 'TailwindCSS'],
+    //     link: 'https://boxmind.vercel.app/'
+    // },
+
+    // {
+    //     image: GPTArticlesImage,
+    //     title: 'GPT Articles',
+    //     github: '',
+    //     description:
+    //         'A web application for generating literature review based on multiple uploaded articles using GPT-3.',
+    //     technologies: ['Next JS', 'TailwindCSS', 'Framer Motion'],
+    //     link: 'https://gpt-articles.vercel.app/'
+    // },
+    // {
+    //     image: CodeRedImage,
+    //     title: `Code Red`,
+    //     github: 'https://github.com/Waheed4719/Code-Red',
+    //     description:
+    //         'A problem solving platform for developers to share their solutions and learn from others.',
+    //     technologies: ['Next JS', 'TailwindCSS', 'Firebase', 'CodeMirror'],
+    //     link: 'https://code-red-one.vercel.app/'
+    // },
 ];
 export const services = [
     {
@@ -354,27 +373,28 @@ export const experiences = [
             'Participating in code reviews and providing constructive feedback to other developers.'
         ]
     },
+
+    {
+        title: 'Software Engineer',
+        company_name: 'CityScan Technologies',
+        icon: CityScanLogo,
+        iconBg: '#E6DEDD',
+        date: 'June 2022 - December 2025',
+        points: [
+            'Designing and Developing an in-house web application using React.js, Material UI and other related technologies.',
+            'Collaborating with backend developers to integrate APIs and improve user experience.',
+            'Participating in code reviews and providing constructive feedback to other developers.'
+        ]
+    },
     {
         title: 'Full Stack Developer',
         company_name: 'Inevex Solutions',
         icon: InevexSolutionsLogo,
         iconBg: '#ffffff',
-        date: 'October 2020 - June 2022',
+        date: 'October 2020 - Present',
         points: [
             'Designing and Developing web applications using React.js, Next.js, Express and other related technologies.',
             'Implementing responsive design and ensuring cross-browser compatibility.',
-            'Participating in code reviews and providing constructive feedback to other developers.'
-        ]
-    },
-    {
-        title: 'Front end Developer',
-        company_name: 'CityScan Technologies',
-        icon: CityScanLogo,
-        iconBg: '#E6DEDD',
-        date: 'June 2022 - Present',
-        points: [
-            'Designing and Developing an in-house web application using React.js, Material UI and other related technologies.',
-            'Collaborating with backend developers to integrate APIs and improve user experience.',
             'Participating in code reviews and providing constructive feedback to other developers.'
         ]
     }
