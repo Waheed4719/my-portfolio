@@ -41,6 +41,13 @@ npm start
 
 Deploy to [Vercel](https://vercel.com) for best Next.js support.
 
+**Vercel settings (important after migrating from CRA):**
+- Framework Preset: **Next.js**
+- Build Command: `next build` (or leave default)
+- Output Directory: **leave empty** — do not use `build`
+
+The repo includes `vercel.json` so Vercel detects Next.js automatically.
+
 ## Stack
 
 - Next.js App Router
