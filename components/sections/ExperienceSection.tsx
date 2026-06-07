@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import Reveal from '@/components/ui/Reveal';
 import SectionHeading from '@/components/ui/SectionHeading';
 import { experiences } from '@/lib/data';
 
@@ -16,12 +16,11 @@ export default function ExperienceSection() {
 
       <div className="relative space-y-10 before:absolute before:-top-8 before:left-[19px] before:h-[calc(100%+4rem)] before:w-px before:bg-[linear-gradient(180deg,transparent_0%,rgba(255,74,87,0.6)_12%,rgba(255,255,255,0.1)_50%,transparent_100%)] md:space-y-6 md:before:left-1/2 md:before:-translate-x-1/2">
         {experiences.map((exp, index) => (
-          <motion.article
+          <Reveal
             key={`${exp.company_name}-${exp.date}`}
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-40px' }}
-            transition={{ delay: index * 0.08 }}
+            as="article"
+            delay={index * 0.08}
+            start="top 90%"
             className={`relative grid gap-6 pl-10 md:grid-cols-2 md:gap-10 md:pl-0 ${
               index % 2 === 0 ? '' : 'md:[&>.timeline-spacer]:order-2'
             }`}
@@ -65,7 +64,7 @@ export default function ExperienceSection() {
                 ))}
               </ul>
             </div>
-          </motion.article>
+          </Reveal>
         ))}
       </div>
     </section>

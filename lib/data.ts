@@ -306,31 +306,8 @@ export type ShowcaseApp = {
   description: string;
   url: string;
   color: string;
+  previewVideo: string;
 };
-
-export type BackgroundTrack = {
-  title: string;
-  artist: string;
-  src: string;
-};
-
-export const backgroundTracks: BackgroundTrack[] = [
-  {
-    title: 'Still Worth Fighting For',
-    artist: 'My Darkest Days',
-    src: '/audio/still-worth-fighting-for.mp3',
-  },
-  {
-    title: 'No Name',
-    artist: 'NF',
-    src: '/audio/no-name.mp3',
-  },
-  {
-    title: 'Courtesy Call',
-    artist: 'Thousand Foot Krutch',
-    src: '/audio/courtesy-call.mp3',
-  },
-];
 
 export const showcaseApps: ShowcaseApp[] = [
   {
@@ -340,6 +317,7 @@ export const showcaseApps: ShowcaseApp[] = [
       'Interactive car viewer with smooth WebGL animations and a responsive layout.',
     url: 'https://collect-car.vercel.app/',
     color: '#ff4a57',
+    previewVideo: '/showcase/collect-car.mp4',
   },
   {
     title: 'Fizzi',
@@ -348,5 +326,6 @@ export const showcaseApps: ShowcaseApp[] = [
       'Beverage brand experience with scroll-linked camera moves and product reveals.',
     url: 'https://fizzi-clone.vercel.app/',
     color: '#6366f1',
+    previewVideo: '/showcase/fizzi.mp4',
   },
 ];

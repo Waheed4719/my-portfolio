@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import Reveal from '@/components/ui/Reveal';
 import SectionHeading from '@/components/ui/SectionHeading';
 
 const stats = [
@@ -20,12 +20,7 @@ export default function AboutSection() {
       />
 
       <div className="grid items-center gap-12 lg:grid-cols-[280px_1fr]">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.92 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          className="relative mx-auto lg:mx-0"
-        >
+        <Reveal className="relative mx-auto lg:mx-0" scale={0.92} y={0}>
           <div className="absolute -inset-4 rounded-full bg-brand-dim/12 blur-2xl" />
           <div className="relative size-[260px] shrink-0 rounded-full bg-gradient-to-br from-brand-dim via-brand-dim/90 to-brand/70 p-[3px] shadow-[0_0_14px_rgba(204,59,70,0.22)]">
             <div className="relative size-full overflow-hidden rounded-full bg-surface">
@@ -39,15 +34,9 @@ export default function AboutSection() {
               />
             </div>
           </div>
-        </motion.div>
+        </Reveal>
 
-        <motion.div
-          initial={{ opacity: 0, x: 24 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
-          className="space-y-6"
-        >
+        <Reveal className="space-y-6" x={24} y={0} delay={0.1}>
           <p className="text-lg leading-relaxed text-white/70">
             I&apos;m Waheed — a web developer with 5+ years of experience
             creating responsive, user-friendly products. I specialize in React and
@@ -70,7 +59,7 @@ export default function AboutSection() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </Reveal>
       </div>
     </section>
   );

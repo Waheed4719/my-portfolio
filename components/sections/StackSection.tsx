@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import {
   SiNextdotjs,
   SiNuxt,
@@ -10,6 +9,7 @@ import {
   SiTypescript,
   SiVuedotjs,
 } from 'react-icons/si';
+import Reveal from '@/components/ui/Reveal';
 import SectionHeading from '@/components/ui/SectionHeading';
 import { stacks, technologies } from '@/lib/data';
 
@@ -33,12 +33,11 @@ export default function StackSection() {
 
       <div className="mb-16 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {stacks.map((stack, index) => (
-          <motion.div
+          <Reveal
             key={stack.title}
-            initial={{ opacity: 0, scale: 0.96 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: index * 0.05 }}
+            delay={index * 0.05}
+            scale={0.96}
+            y={0}
             className="glass flex gap-4 rounded-2xl p-5"
           >
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/5 text-brand">
@@ -50,16 +49,11 @@ export default function StackSection() {
                 {stack.description}
               </p>
             </div>
-          </motion.div>
+          </Reveal>
         ))}
       </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="glass rounded-3xl p-8"
-      >
+      <Reveal y={16} className="glass rounded-3xl p-8">
         <p className="mb-6 font-mono text-xs uppercase tracking-[0.3em] text-white/40">
           Full toolkit
         </p>
@@ -82,7 +76,7 @@ export default function StackSection() {
             </div>
           ))}
         </div>
-      </motion.div>
+      </Reveal>
     </section>
   );
 }

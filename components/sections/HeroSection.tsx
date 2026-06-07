@@ -1,8 +1,9 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import { motion } from 'framer-motion';
+import { useRef } from 'react';
 import SocialLinks from '@/components/ui/SocialLinks';
+import { useGsapMount } from '@/hooks/useGsapMount';
 
 const HeroScene = dynamic(() => import('@/components/3d/HeroScene'), {
   ssr: false,
@@ -12,6 +13,20 @@ const HeroScene = dynamic(() => import('@/components/3d/HeroScene'), {
 });
 
 export default function HeroSection() {
+  const badgeRef = useRef<HTMLDivElement>(null);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const copyRef = useRef<HTMLParagraphElement>(null);
+  const ctaRef = useRef<HTMLDivElement>(null);
+  const socialRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  useGsapMount(badgeRef, { delay: 0 });
+  useGsapMount(titleRef, { delay: 0.1 });
+  useGsapMount(copyRef, { delay: 0.2 });
+  useGsapMount(ctaRef, { delay: 0.3 });
+  useGsapMount(socialRef, { delay: 0.5, y: 0 });
+  useGsapMount(scrollRef, { delay: 1.2, y: 0 });
+
   return (
     <section
       id="home"
@@ -24,21 +39,15 @@ export default function HeroSection() {
 
       <div className="section-shell relative z-10 pt-28">
         <div className="max-w-2xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-          >
+          <div ref={badgeRef}>
             <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 font-mono text-xs text-white/70 backdrop-blur-sm">
               <span className="h-2 w-2 animate-pulse rounded-full bg-brand" />
               Available for freelance work
             </span>
-          </motion.div>
+          </div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
+          <h1
+            ref={titleRef}
             className="mt-6 font-display text-5xl font-extrabold leading-[1.05] tracking-tight text-white md:text-6xl lg:text-7xl"
           >
             Crafting{' '}
@@ -46,23 +55,19 @@ export default function HeroSection() {
               immersive
             </span>{' '}
             web experiences
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
+          <p
+            ref={copyRef}
             className="mt-6 max-w-xl text-lg leading-relaxed text-white/65"
           >
             I&apos;m Waheed Uddin Ahmed — a full stack developer with 5+ years
             building products with React, Next.js, and Three.js. I turn ideas
             into fast, beautiful, interactive experiences.
-          </motion.p>
+          </p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
+          <div
+            ref={ctaRef}
             className="pointer-events-auto mt-8 flex flex-wrap items-center gap-4"
           >
             <a
@@ -79,23 +84,16 @@ export default function HeroSection() {
             >
               Resume
             </a>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.5 }}
-            className="pointer-events-auto mt-10"
-          >
+          <div ref={socialRef} className="pointer-events-auto mt-10">
             <SocialLinks />
-          </motion.div>
+          </div>
         </div>
       </div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
+      <div
+        ref={scrollRef}
         className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2"
       >
         <div className="flex flex-col items-center gap-2 text-white/40">
@@ -104,7 +102,7 @@ export default function HeroSection() {
           </span>
           <div className="h-10 w-px bg-gradient-to-b from-brand to-transparent" />
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

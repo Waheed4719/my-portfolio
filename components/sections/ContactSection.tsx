@@ -1,172 +1,256 @@
 'use client';
 
-import { FormEvent, useState } from 'react';
-import emailjs from '@emailjs/browser';
-import { motion } from 'framer-motion';
-import { FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { SiUpwork } from 'react-icons/si';
+import { useForm, type FieldErrors } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { toast } from 'sonner';
+import { HiMail, HiLocationMarker } from 'react-icons/hi';
+import Reveal from '@/components/ui/Reveal';
 import SectionHeading from '@/components/ui/SectionHeading';
-import { socialLinks } from '@/lib/data';
+import SocialLinks from '@/components/ui/SocialLinks';
+import {
+  contactSchema,
+  type ContactFormValues,
+} from '@/lib/contact-schema';
 
-const iconMap: Record<string, React.ReactNode> = {
-  linkedin: <FaLinkedinIn size={18} />,
-  github: <FaGithub size={18} />,
-  upwork: <SiUpwork size={18} />,
-  facebook: <FaFacebook size={18} />,
-};
+const MY_EMAIL = 'dmc4719@gmail.com';
+
+function fieldClass(hasError: boolean) {
+  return `w-full rounded-xl border bg-white/5 px-4 py-3 text-sm text-white outline-none transition disabled:opacity-60 ${
+    hasError
+      ? 'border-brand/80 focus:border-brand'
+      : 'border-white/10 focus:border-brand'
+  }`;
+}
 
 export default function ContactSection() {
-  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>(
-    'idle',
-  );
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm<ContactFormValues>({
+    resolver: zodResolver(contactSchema),
+    defaultValues: {
+      from_name: '',
+      reply_to: '',
+      message: '',
+      company: '',
+    },
+    mode: 'onTouched',
+  });
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const form = e.currentTarget;
-    const formData = new FormData(form);
+  const onInvalid = (fieldErrors: FieldErrors<ContactFormValues>) => {
+    const firstError = Object.values(fieldErrors)[0]?.message;
+    toast.error(
+      typeof firstError === 'string'
+        ? firstError
+        : 'Please fix the highlighted fields.',
+    );
+  };
 
-    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-
-    if (!serviceId || !templateId || !publicKey) {
-      setStatus('error');
-      return;
-    }
-
-    setStatus('sending');
+  const onSubmit = async (values: ContactFormValues) => {
+    const toastId = toast.loading('Sending your message...');
 
     try {
-      await emailjs.send(
-        serviceId,
-        templateId,
-        {
-          from_name: formData.get('name'),
-          reply_to: formData.get('email'),
-          message: formData.get('message'),
-        },
-        publicKey,
-      );
-      setStatus('sent');
-      form.reset();
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: values.from_name,
+          email: values.reply_to,
+          message: values.message,
+          company: values.company,
+        }),
+      });
+
+      const data = (await response.json()) as {
+        success?: boolean;
+        error?: string;
+      };
+
+      if (!response.ok) {
+        toast.error(data.error ?? 'Could not send your message.', {
+          id: toastId,
+        });
+        return;
+      }
+
+      toast.success("Message sent! I'll get back to you soon.", { id: toastId });
+      reset();
     } catch {
-      setStatus('error');
+      toast.error(`Could not reach the server. Email me at ${MY_EMAIL}.`, {
+        id: toastId,
+      });
     }
   };
 
   return (
-    <section id="contact" className="section-shell pb-32">
-      <SectionHeading
-        eyebrow="Contact"
-        title="Let's build something bold"
-        description="Have a project in mind? Drop a message — I typically reply within a day."
-      />
+    <section id="contact">
+      <div className="section-shell">
+        <SectionHeading
+          eyebrow="Contact"
+          title="Let's build something"
+          description="Have a project in mind? Drop me a message and I'll get back to you."
+        />
 
-      <div className="grid gap-10 lg:grid-cols-[1fr_420px]">
-        <motion.form
-          initial={{ opacity: 0, x: -16 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          onSubmit={handleSubmit}
-          className="glass space-y-5 rounded-3xl p-8"
-        >
-          <div>
-            <label htmlFor="name" className="mb-2 block text-sm text-white/50">
-              Name
-            </label>
-            <input
-              id="name"
-              name="name"
-              required
-              className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-brand"
-              placeholder="Your name"
-            />
-          </div>
-          <div>
-            <label htmlFor="email" className="mb-2 block text-sm text-white/50">
-              Email
-            </label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              required
-              className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-brand"
-              placeholder="you@email.com"
-            />
-          </div>
-          <div>
-            <label
-              htmlFor="message"
-              className="mb-2 block text-sm text-white/50"
+        <div className="grid gap-12 lg:grid-cols-2">
+          <Reveal x={-20} y={0}>
+            <div className="glass rounded-2xl p-8">
+              <h3 className="font-display text-xl font-bold text-white">
+                Get in touch
+              </h3>
+              <p className="mt-3 text-white/60">
+                I&apos;m open to freelance projects, full-time roles, and
+                collaborations on interesting web and 3D experiences.
+              </p>
+
+              <div className="mt-8 space-y-4">
+                <div className="flex items-center gap-3 text-white/70">
+                  <HiMail className="text-brand" />
+                  <a
+                    href={`mailto:${MY_EMAIL}`}
+                    className="text-sm transition-colors hover:text-brand"
+                  >
+                    {MY_EMAIL}
+                  </a>
+                </div>
+                <div className="flex items-center gap-3 text-white/70">
+                  <HiLocationMarker className="text-brand" />
+                  <span className="text-sm">Available worldwide · Remote</span>
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <p className="mb-4 font-mono text-xs uppercase tracking-widest text-white/40">
+                  Connect
+                </p>
+                <SocialLinks />
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal x={20} y={0}>
+            <form
+              onSubmit={handleSubmit(onSubmit, onInvalid)}
+              noValidate
+              className="glass space-y-5 rounded-2xl p-8"
             >
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              required
-              rows={5}
-              className="w-full resize-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-brand"
-              placeholder="Tell me about your project…"
-            />
-          </div>
-          <button
-            type="submit"
-            disabled={status === 'sending'}
-            className="w-full rounded-full bg-brand py-3.5 text-sm font-semibold text-white transition hover:bg-brand-glow disabled:opacity-60"
-          >
-            {status === 'sending' ? 'Sending…' : 'Send Message'}
-          </button>
-          {status === 'sent' && (
-            <p className="text-center text-sm text-emerald-400">
-              Message sent — thank you!
-            </p>
-          )}
-          {status === 'error' && (
-            <p className="text-center text-sm text-brand">
-              Could not send. Configure EmailJS env vars or reach out on LinkedIn.
-            </p>
-          )}
-        </motion.form>
+              <p className="text-sm leading-relaxed text-white/55">
+                Fill in <span className="text-white/80">your</span> name and
+                email so I know who to reply to.
+              </p>
 
-        <motion.div
-          initial={{ opacity: 0, x: 16 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          className="glass flex flex-col justify-between rounded-3xl p-8"
-        >
-          <div>
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-brand">
-              Connect
-            </p>
-            <p className="mt-4 text-white/60">
-              Prefer socials? Find me on any of these platforms.
-            </p>
-          </div>
+              <input
+                type="text"
+                tabIndex={-1}
+                autoComplete="off"
+                className="hidden"
+                aria-hidden
+                {...register('company')}
+              />
 
-          <div className="my-8 grid grid-cols-2 gap-4">
-            {socialLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-sm text-white/70 transition hover:border-brand/40 hover:text-white"
+              <div>
+                <label
+                  htmlFor="from_name"
+                  className="mb-2 block font-mono text-xs uppercase tracking-wider text-white/50"
+                >
+                  Your name
+                </label>
+                <input
+                  id="from_name"
+                  type="text"
+                  autoComplete="name"
+                  disabled={isSubmitting}
+                  aria-invalid={Boolean(errors.from_name)}
+                  aria-describedby={
+                    errors.from_name ? 'from_name-error' : undefined
+                  }
+                  className={fieldClass(Boolean(errors.from_name))}
+                  placeholder="Your name"
+                  {...register('from_name')}
+                />
+                {errors.from_name && (
+                  <p
+                    id="from_name-error"
+                    role="alert"
+                    className="mt-2 text-xs text-brand"
+                  >
+                    {errors.from_name.message}
+                  </p>
+                )}
+              </div>
+
+              <div>
+                <label
+                  htmlFor="reply_to"
+                  className="mb-2 block font-mono text-xs uppercase tracking-wider text-white/50"
+                >
+                  Your email
+                </label>
+                <input
+                  id="reply_to"
+                  type="email"
+                  autoComplete="email"
+                  disabled={isSubmitting}
+                  aria-invalid={Boolean(errors.reply_to)}
+                  aria-describedby={
+                    errors.reply_to ? 'reply_to-error' : undefined
+                  }
+                  className={fieldClass(Boolean(errors.reply_to))}
+                  placeholder="you@email.com"
+                  {...register('reply_to')}
+                />
+                {errors.reply_to && (
+                  <p
+                    id="reply_to-error"
+                    role="alert"
+                    className="mt-2 text-xs text-brand"
+                  >
+                    {errors.reply_to.message}
+                  </p>
+                )}
+              </div>
+
+              <div>
+                <label
+                  htmlFor="message"
+                  className="mb-2 block font-mono text-xs uppercase tracking-wider text-white/50"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  rows={5}
+                  disabled={isSubmitting}
+                  aria-invalid={Boolean(errors.message)}
+                  aria-describedby={
+                    errors.message ? 'message-error' : undefined
+                  }
+                  className={`${fieldClass(Boolean(errors.message))} resize-none`}
+                  placeholder="Tell me about your project..."
+                  {...register('message')}
+                />
+                {errors.message && (
+                  <p
+                    id="message-error"
+                    role="alert"
+                    className="mt-2 text-xs text-brand"
+                  >
+                    {errors.message.message}
+                  </p>
+                )}
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full rounded-full bg-brand py-3.5 font-mono text-sm uppercase tracking-wider text-white transition hover:bg-brand-glow disabled:cursor-not-allowed disabled:opacity-60"
               >
-                <span className="text-brand">{iconMap[link.icon]}</span>
-                {link.name}
-              </a>
-            ))}
-          </div>
-
-          <div className="rounded-2xl border border-dashed border-white/10 p-6 text-center">
-            <p className="font-display text-2xl font-bold">Available for work</p>
-            <p className="mt-2 text-sm text-white/45">
-              Freelance & full-time opportunities
-            </p>
-          </div>
-        </motion.div>
+                {isSubmitting ? 'Sending...' : 'Send Message'}
+              </button>
+            </form>
+          </Reveal>
+        </div>
       </div>
     </section>
   );

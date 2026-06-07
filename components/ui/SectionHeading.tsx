@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import Reveal from '@/components/ui/Reveal';
 
 type SectionHeadingProps = {
   eyebrow: string;
@@ -14,13 +14,7 @@ export default function SectionHeading({
   description,
 }: SectionHeadingProps) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-80px' }}
-      transition={{ duration: 0.6 }}
-      className="mb-14 max-w-2xl"
-    >
+    <Reveal className="mb-14 max-w-2xl" y={24} start="top 88%">
       <p className="mb-3 font-mono text-xs uppercase tracking-[0.35em] text-brand">
         {eyebrow}
       </p>
@@ -32,6 +26,6 @@ export default function SectionHeading({
           {description}
         </p>
       )}
-    </motion.div>
+    </Reveal>
   );
 }
