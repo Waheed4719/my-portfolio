@@ -11,7 +11,16 @@ export default function Navbar() {
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
+    const onScroll = () => {
+      const y = window.scrollY;
+      setScrolled((prev) => {
+        if (y > 72) return true;
+        if (y < 16) return false;
+        return prev;
+      });
+    };
+
+    onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
@@ -33,8 +42,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-40 transition-all duration-500 ${
-        scrolled ? 'glass py-3 shadow-lg shadow-black/20' : 'bg-transparent py-5'
+      className={`fixed inset-x-0 top-0 z-40 border transition-[background-color,box-shadow,padding] duration-300 ${
+        scrolled
+          ? 'border-white/10 bg-surface-glass py-3 shadow-lg shadow-black/20 backdrop-blur-xl'
+          : 'border-transparent bg-transparent py-5 shadow-none backdrop-blur-none'
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 md:px-8">
