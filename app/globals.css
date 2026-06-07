@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&family=Syne:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Syne', system-ui, sans-serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --nav-height: 5.5rem;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-surface text-white antialiased font-body;
+  background-image: radial-gradient(
+      ellipse 80% 50% at 50% -20%,
+      rgba(255, 74, 87, 0.12),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 60% 40% at 100% 0%,
+      rgba(99, 102, 241, 0.08),
+      transparent
+    );
+}
+
+::selection {
+  background: rgba(255, 74, 87, 0.35);
+  color: white;
+}
+
+.glass {
+  @apply border border-white/10 bg-surface-glass backdrop-blur-xl;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-6xl px-6 py-24 md:px-8;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-white via-white to-brand bg-clip-text text-transparent;
+}
+
+.noise-overlay {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 74, 87, 0.45);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 74, 87, 0.7);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}

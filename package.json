@@ -1,74 +1,34 @@
 {
-    "name": "portfolio",
-    "version": "0.1.0",
-    "private": true,
-    "dependencies": {
-        "@emailjs/browser": "^3.10.0",
-        "@lottiefiles/react-lottie-player": "^3.4.7",
-        "framer-motion": "^7.2.1",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "react-icons": "^4.4.0",
-        "react-intersection-observer": "^9.4.0",
-        "react-router-dom": "^6.3.0",
-        "react-scripts": "5.0.1",
-        "react-vertical-timeline-component": "^3.6.0",
-        "swiper": "^8.4.2",
-        "web-vitals": "^2.1.4"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "dev": "eslint \"src/**/*.{js,jsx,ts,tsx}\" && react-scripts start",
-        "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
-        "lint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
-        "lint:fixAndRun": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix && npm start",
-        "lint:quietAndRun": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --quiet && npm start",
-        "formatAll": "prettier --write ."
-    },
-    "eslintConfig": {
-        "extends": [
-            "react-app",
-            "react-app/jest"
-        ]
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "devDependencies": {
-        "@types/jest": "^28.1.8",
-        "@types/node": "^18.7.13",
-        "@types/react": "^18.0.17",
-        "@types/react-dom": "^18.0.6",
-        "@types/react-icons": "^3.0.0",
-        "@types/react-vertical-timeline-component": "^3.3.3",
-        "@typescript-eslint/eslint-plugin": "^5.35.1",
-        "@typescript-eslint/parser": "^5.35.1",
-        "autoprefixer": "^10.4.8",
-        "eslint": "^8.23.0",
-        "eslint-config-airbnb": "^19.0.4",
-        "eslint-config-airbnb-base": "^15.0.0",
-        "eslint-config-airbnb-typescript": "^17.0.0",
-        "eslint-config-prettier": "^8.5.0",
-        "eslint-plugin-import": "^2.26.0",
-        "eslint-plugin-jsx-a11y": "^6.6.1",
-        "eslint-plugin-prettier": "^4.2.1",
-        "eslint-plugin-react": "^7.31.1",
-        "eslint-plugin-react-hooks": "^4.6.0",
-        "postcss": "^8.4.16",
-        "prettier": "^2.7.1",
-        "tailwindcss": "^3.1.8",
-        "typescript": "^4.8.2"
-    }
+  "name": "my-portfolio",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "framer-motion": "^11.18.2",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.170.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.1.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "typescript": "^5.7.2"
+  }
 }
