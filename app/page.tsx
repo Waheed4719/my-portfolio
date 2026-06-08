@@ -13,8 +13,8 @@ const HeroSection = dynamic(
   { ssr: false },
 );
 
-const ScrollShowcaseSection = dynamic(
-  () => import('@/components/sections/ScrollShowcaseSection'),
+const ShowcaseSection = dynamic(
+  () => import('@/components/sections/ShowcaseSection'),
   { ssr: false },
 );
 
@@ -26,7 +26,7 @@ export default function HomePage() {
       <ExperienceSection />
       <ServicesSection />
       <StackSection />
-      <ScrollShowcaseSection />
+      <ShowcaseSection />
       <ProjectsSection />
       <ContactSection />
     </main>

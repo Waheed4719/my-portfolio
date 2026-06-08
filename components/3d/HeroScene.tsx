@@ -1,6 +1,6 @@
 'use client';
 
-import { Suspense } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import {
   Environment,
@@ -65,12 +65,30 @@ function Scene() {
 }
 
 export default function HeroScene() {
+  const [renderActive, setRenderActive] = useState(true);
+
+  useEffect(() => {
+    const showcase = document.getElementById('showcase');
+    if (!showcase) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setRenderActive(!entry.isIntersecting);
+      },
+      { threshold: 0.15 },
+    );
+
+    observer.observe(showcase);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="absolute inset-0">
       <Canvas
         camera={{ position: [0, 1.2, 5.5], fov: 42 }}
-        dpr={[1, 1.5]}
-        gl={{ antialias: true, alpha: false }}
+        dpr={[1, 1.25]}
+        frameloop={renderActive ? 'always' : 'never'}
+        gl={{ antialias: true, alpha: false, powerPreference: 'high-performance' }}
       >
         <Scene />
       </Canvas>
