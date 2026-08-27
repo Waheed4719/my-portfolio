@@ -65,7 +65,7 @@ export default function ShowcaseSection() {
                 key={app.title}
                 type="button"
                 onClick={() => selectIndex(i)}
-                className={`rounded-full border px-4 py-2 font-mono text-[11px] uppercase tracking-[0.2em] transition-all md:text-xs ${
+                className={`type-label rounded-full border px-4 py-2 transition-all md:text-xs ${
                   isActive
                     ? 'border-white/20 bg-white/10 text-white shadow-[0_0_20px_rgba(255,255,255,0.06)]'
                     : 'border-white/5 bg-white/[0.03] text-white/45 hover:border-white/10 hover:text-white/75'
@@ -101,12 +101,12 @@ export default function ShowcaseSection() {
         <div className="glass mt-5 flex flex-col gap-4 rounded-2xl p-4 md:flex-row md:items-center md:justify-between md:p-5">
           <div className="min-w-0 flex-1">
             <span
-              className="mb-1 inline-block font-mono text-[10px] uppercase tracking-[0.3em] md:text-xs"
+              className="type-label mb-1 inline-block md:text-xs"
               style={{ color: active.color }}
             >
               {active.subtitle}
             </span>
-            <h3 className="font-display text-xl font-bold text-white md:text-2xl">
+            <h3 className="type-card-title text-xl text-white md:text-2xl">
               {active.title}
             </h3>
             <p className="mt-1 hidden text-sm leading-relaxed text-white/55 sm:block">
@@ -124,7 +124,7 @@ export default function ShowcaseSection() {
               >
                 <HiChevronLeft className="size-4" />
               </button>
-              <span className="min-w-[3.5rem] text-center font-mono text-[10px] uppercase tracking-[0.3em] text-white/40">
+              <span className="type-label min-w-[3.5rem] text-center text-white/40">
                 {activeIndex + 1} / {count}
               </span>
               <button
@@ -141,7 +141,7 @@ export default function ShowcaseSection() {
               href={active.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2.5 font-mono text-xs uppercase tracking-wider text-white transition-colors hover:bg-brand-glow"
+              className="type-cta inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2.5 text-white transition-colors hover:bg-brand-glow"
             >
               Open full site
               <HiExternalLink />

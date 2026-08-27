@@ -51,13 +51,6 @@ export default function BackgroundMusic() {
     }
   }, []);
 
-  const tryAutoplay = useCallback(async () => {
-    if (missingFiles || loading || !current || hasStartedRef.current) {
-      return;
-    }
-    await playTrack(current);
-  }, [current, loading, missingFiles, playTrack]);
-
   useEffect(() => {
     let cancelled = false;
 
@@ -90,30 +83,6 @@ export default function BackgroundMusic() {
       cancelled = true;
     };
   }, []);
-
-  useEffect(() => {
-    if (loading || missingFiles || !current) return;
-    void tryAutoplay();
-  }, [loading, missingFiles, current, tryAutoplay]);
-
-  useEffect(() => {
-    if (loading || missingFiles || queue.length === 0) return;
-
-    const startOnGesture = () => {
-      if (hasStartedRef.current) return;
-      void tryAutoplay();
-    };
-
-    window.addEventListener('pointerdown', startOnGesture, { once: true });
-    window.addEventListener('keydown', startOnGesture, { once: true });
-    window.addEventListener('scroll', startOnGesture, { once: true, passive: true });
-
-    return () => {
-      window.removeEventListener('pointerdown', startOnGesture);
-      window.removeEventListener('keydown', startOnGesture);
-      window.removeEventListener('scroll', startOnGesture);
-    };
-  }, [loading, missingFiles, queue.length, tryAutoplay]);
 
   const advanceTrack = useCallback(() => {
     const allTracks = allTracksRef.current;
@@ -195,14 +164,10 @@ export default function BackgroundMusic() {
 
       {expanded && current && showControls && (
         <div className="glass max-w-[220px] rounded-2xl px-4 py-3 text-right shadow-lg shadow-black/30">
-          <p className="font-mono text-[10px] uppercase tracking-widest text-brand">
-            Now playing
-          </p>
-          <p className="mt-1 font-display text-sm font-semibold text-white">
-            {current.title}
-          </p>
+          <p className="type-eyebrow text-[10px]">Now playing</p>
+          <p className="type-card-title mt-1 text-sm text-white">{current.title}</p>
           {current.artist && (
-            <p className="font-mono text-xs text-white/50">{current.artist}</p>
+            <p className="type-label text-xs text-white/50">{current.artist}</p>
           )}
         </div>
       )}

@@ -46,9 +46,9 @@ export default function ExperienceSection() {
                   />
                 </div>
                 <div>
-                  <h3 className="font-display text-xl font-semibold">{exp.title}</h3>
-                  <p className="text-brand">{exp.company_name}</p>
-                  <p className="mt-1 font-mono text-xs text-white/45">{exp.date}</p>
+                  <h3 className="type-card-title text-xl">{exp.title}</h3>
+                  <p className="font-body font-medium text-brand">{exp.company_name}</p>
+                  <p className="type-label mt-1 text-white/45">{exp.date}</p>
                 </div>
               </div>
 

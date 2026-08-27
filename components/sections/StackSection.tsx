@@ -44,7 +44,7 @@ export default function StackSection() {
               {stackIcons[stack.icon]}
             </div>
             <div>
-              <h3 className="font-display text-lg font-semibold">{stack.title}</h3>
+              <h3 className="type-card-title">{stack.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-white/50">
                 {stack.description}
               </p>
@@ -54,9 +54,7 @@ export default function StackSection() {
       </div>
 
       <Reveal y={16} className="glass rounded-3xl p-8">
-        <p className="mb-6 font-mono text-xs uppercase tracking-[0.3em] text-white/40">
-          Full toolkit
-        </p>
+        <p className="type-label mb-6 text-white/40">Full toolkit</p>
         <div className="grid grid-cols-3 gap-6 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7">
           {technologies.map((tech) => (
             <div

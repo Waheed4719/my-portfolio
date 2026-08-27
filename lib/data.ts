@@ -296,9 +296,9 @@ export const experiences: Experience[] = [
   },
 ];
 
-export const ROBOT_MODEL_URL = '/models/robot-expressive.glb';
-
-export const HELMET_MODEL_URL = '/models/flight-helmet.glb';
+export const BLACK_SP_MODEL_URL = '/models/black-sp.glb';
+export const BLACK_SP_ANIMATION = 'mixamo.com';
+export const BLACK_SP_ANIMATIONS = ['mixamo.com'] as const;
 
 export type ShowcaseApp = {
   title: string;

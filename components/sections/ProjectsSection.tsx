@@ -38,9 +38,7 @@ export default function ProjectsSection() {
               </div>
 
               <div className="flex flex-1 flex-col p-5">
-                <h3 className="font-display text-lg font-bold text-white">
-                  {project.title}
-                </h3>
+                <h3 className="type-card-title text-white">{project.title}</h3>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-white/55">
                   {project.description}
                 </p>
@@ -49,7 +47,7 @@ export default function ProjectsSection() {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="rounded-full bg-white/5 px-2.5 py-0.5 font-mono text-[10px] text-white/50"
+                      className="type-label rounded-full bg-white/5 px-2.5 py-0.5 text-[10px] text-white/50"
                     >
                       {tech}
                     </span>
@@ -61,7 +59,7 @@ export default function ProjectsSection() {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-wider text-brand transition-colors hover:text-brand-glow"
+                    className="type-cta mt-4 inline-flex items-center gap-2 text-brand transition-colors hover:text-brand-glow"
                   >
                     Live Demo
                     <HiExternalLink />

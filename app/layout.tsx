@@ -6,11 +6,11 @@ import AppToaster from '@/components/ui/AppToaster';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Waheed Uddin Ahmed — Full Stack Developer',
+  title: 'Waheed Uddin Ahmed — Software Engineer',
   description:
-    'Portfolio of Waheed Uddin Ahmed — full stack developer specializing in React, Next.js, Three.js, and immersive web experiences.',
+    'Portfolio of Waheed Uddin Ahmed — software engineer specializing in React, Next.js, Three.js, and immersive web experiences.',
   openGraph: {
-    title: 'Waheed Uddin Ahmed — Full Stack Developer',
+    title: 'Waheed Uddin Ahmed — Software Engineer',
     description:
       'Interactive 3D portfolio showcasing modern web development projects.',
     type: 'website',

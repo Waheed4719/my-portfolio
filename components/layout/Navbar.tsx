@@ -61,7 +61,7 @@ export default function Navbar() {
             <li key={item.href}>
               <a
                 href={item.href}
-                className="font-mono text-xs uppercase tracking-widest text-white/60 transition-colors hover:text-brand"
+                className="type-label text-white/60 transition-colors hover:text-brand"
               >
                 {item.name}
               </a>
@@ -71,7 +71,7 @@ export default function Navbar() {
 
         <a
           href="#contact"
-          className="hidden rounded-full border border-brand/50 bg-brand/10 px-5 py-2 font-mono text-xs uppercase tracking-wider text-brand transition-all hover:bg-brand hover:text-white md:inline-block"
+          className="type-cta hidden rounded-full border border-brand/50 bg-brand/10 px-5 py-2 text-brand transition-all hover:bg-brand hover:text-white md:inline-block"
         >
           Hire Me
         </a>
@@ -96,7 +96,7 @@ export default function Navbar() {
               <a
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="block font-mono text-sm uppercase tracking-widest text-white/70 hover:text-brand"
+                className="type-label block text-sm text-white/70 hover:text-brand"
               >
                 {item.name}
               </a>
@@ -106,7 +106,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="inline-block rounded-full border border-brand px-5 py-2 font-mono text-xs uppercase tracking-wider text-brand"
+              className="type-cta inline-block rounded-full border border-brand px-5 py-2 text-brand"
             >
               Hire Me
             </a>

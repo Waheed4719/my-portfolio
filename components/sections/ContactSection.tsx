@@ -96,9 +96,7 @@ export default function ContactSection() {
         <div className="grid gap-12 lg:grid-cols-2">
           <Reveal x={-20} y={0}>
             <div className="glass rounded-2xl p-8">
-              <h3 className="font-display text-xl font-bold text-white">
-                Get in touch
-              </h3>
+              <h3 className="type-card-title text-xl text-white">Get in touch</h3>
               <p className="mt-3 text-white/60">
                 I&apos;m open to freelance projects, full-time roles, and
                 collaborations on interesting web and 3D experiences.
@@ -121,9 +119,7 @@ export default function ContactSection() {
               </div>
 
               <div className="mt-8">
-                <p className="mb-4 font-mono text-xs uppercase tracking-widest text-white/40">
-                  Connect
-                </p>
+                <p className="type-label mb-4 text-white/40">Connect</p>
                 <SocialLinks />
               </div>
             </div>
@@ -152,7 +148,7 @@ export default function ContactSection() {
               <div>
                 <label
                   htmlFor="from_name"
-                  className="mb-2 block font-mono text-xs uppercase tracking-wider text-white/50"
+                  className="type-label mb-2 block text-white/50"
                 >
                   Your name
                 </label>
@@ -183,7 +179,7 @@ export default function ContactSection() {
               <div>
                 <label
                   htmlFor="reply_to"
-                  className="mb-2 block font-mono text-xs uppercase tracking-wider text-white/50"
+                  className="type-label mb-2 block text-white/50"
                 >
                   Your email
                 </label>
@@ -214,7 +210,7 @@ export default function ContactSection() {
               <div>
                 <label
                   htmlFor="message"
-                  className="mb-2 block font-mono text-xs uppercase tracking-wider text-white/50"
+                  className="type-label mb-2 block text-white/50"
                 >
                   Message
                 </label>
@@ -244,7 +240,7 @@ export default function ContactSection() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full rounded-full bg-brand py-3.5 font-mono text-sm uppercase tracking-wider text-white transition hover:bg-brand-glow disabled:cursor-not-allowed disabled:opacity-60"
+                className="type-cta w-full rounded-full bg-brand py-3.5 text-sm text-white transition hover:bg-brand-glow disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>

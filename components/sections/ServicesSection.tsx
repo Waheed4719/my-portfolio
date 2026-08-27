@@ -41,9 +41,7 @@ export default function ServicesSection() {
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand transition-colors group-hover:bg-brand group-hover:text-white">
                   <Icon className="text-xl" />
                 </div>
-                <h3 className="font-display text-lg font-bold text-white">
-                  {service.title}
-                </h3>
+                <h3 className="type-card-title text-white">{service.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/60">
                   {service.description}
                 </p>

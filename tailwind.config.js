@@ -22,7 +22,6 @@ const config: Config = {
       fontFamily: {
         display: ['var(--font-display)', 'system-ui', 'sans-serif'],
         body: ['var(--font-body)', 'system-ui', 'sans-serif'],
-        mono: ['var(--font-mono)', 'monospace'],
       },
       backgroundImage: {
         'grid-glow':

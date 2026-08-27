@@ -16,7 +16,7 @@ export default function AboutSection() {
       <SectionHeading
         eyebrow="About"
         title="Building products that feel premium"
-        description="Full stack developer with a passion for clean UX, real-time apps, and immersive 3D on the web."
+        description="Software engineer with a passion for clean UX, real-time apps, and immersive 3D on the web."
       />
 
       <div className="grid items-center gap-12 lg:grid-cols-[280px_1fr]">
@@ -38,12 +38,12 @@ export default function AboutSection() {
 
         <Reveal className="space-y-6" x={24} y={0} delay={0.1}>
           <p className="text-lg leading-relaxed text-white/70">
-            I&apos;m Waheed — a web developer with 5+ years of experience
+            I&apos;m Waheed — a software engineer with 5+ years of experience
             creating responsive, user-friendly products. I specialize in React and
             Next.js ecosystems, real-time backends, and pushing the browser with
             Three.js experiences like Collect Car and Fizzi.
           </p>
-          <p className="leading-relaxed text-white/55">
+          <p className="type-section-copy">
             From healthcare SaaS to 3D marketing sites, I care about performance,
             accessibility, and polish. I debug fast, ship reliably, and love
             turning ambitious ideas into interfaces people remember.
@@ -52,9 +52,7 @@ export default function AboutSection() {
           <div className="grid gap-4 sm:grid-cols-3">
             {stats.map((stat) => (
               <div key={stat.label} className="glass rounded-2xl p-5">
-                <p className="font-display text-3xl font-bold text-brand">
-                  {stat.value}
-                </p>
+                <p className="type-stat">{stat.value}</p>
                 <p className="mt-1 text-sm text-white/50">{stat.label}</p>
               </div>
             ))}
